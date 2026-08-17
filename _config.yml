@@ -2,7 +2,7 @@ title: AMPEL Wiki
 description: Statischer Markdown-Implementationsleitfaden für das AMPEL-Projekt
 
 url: "https://cl3m3-ns.github.io"
-baseurl: "/wiki/test"
+baseurl: "/wiki-test"
 
 theme: just-the-docs
 permalink: pretty
