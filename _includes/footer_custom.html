@@ -1,0 +1,62 @@
+{% assign ordered_pages = site.pages | where_exp: "doc", "doc.doc_order" | sort: "doc_order" %}
+{% assign previous_page = nil %}
+{% assign next_page = nil %}
+{% assign previous_candidate = nil %}
+{% assign found_current = false %}
+
+{% if page.authors %}
+  <p class="text-small text-grey-dk-100 mb-4">
+    Autor:innen: {{ page.authors | join: ", " }}
+  </p>
+{% elsif page.author %}
+  <p class="text-small text-grey-dk-100 mb-4">
+    Autor:in: {{ page.author }}
+  </p>
+{% endif %}
+
+{% for ordered_page in ordered_pages %}
+  {% if found_current and next_page == nil %}
+    {% assign next_page = ordered_page %}
+  {% endif %}
+
+  {% if ordered_page.url == page.url %}
+    {% assign previous_page = previous_candidate %}
+    {% assign found_current = true %}
+  {% elsif found_current == false %}
+    {% assign previous_candidate = ordered_page %}
+  {% endif %}
+{% endfor %}
+
+{% if previous_page or next_page %}
+  <nav class="ampel-page-nav" aria-label="Seitennavigation">
+    <div class="ampel-page-nav__item ampel-page-nav__item--prev">
+      {% if previous_page %}
+        <a href="{{ previous_page.url | relative_url }}">
+          <span>Vorherige Seite</span>
+          {{ previous_page.title }}
+        </a>
+      {% endif %}
+    </div>
+    <div class="ampel-page-nav__item ampel-page-nav__item--next">
+      {% if next_page %}
+        <a href="{{ next_page.url | relative_url }}">
+          <span>Nächste Seite</span>
+          {{ next_page.title }}
+        </a>
+      {% endif %}
+    </div>
+  </nav>
+{% endif %}
+
+<nav class="ampel-site-footer-links" aria-label="Projekt- und Rechtliches">
+  <a class="ampel-site-footer-links__logo-link" href="https://www.uniklinikum-leipzig.de/einrichtungen/ampel" target="_blank" rel="noopener noreferrer" aria-label="AMPEL-Projektseite des Universitaetsklinikums Leipzig">
+    <img class="ampel-site-footer-links__logo ampel-site-footer-links__logo--ampel" src="{{ '/assets/images/footer-ampel-logo.svg' | relative_url }}" alt="AMPEL">
+  </a>
+  <a class="ampel-site-footer-links__logo-link" href="https://github.com/AMPEL-CDSS-ORG/ampel-wiki" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
+    <img class="ampel-site-footer-links__logo ampel-site-footer-links__logo--github" src="{{ '/assets/images/GitHub_Lockup_Black_Clearspace.svg' | relative_url }}" alt="GitHub">
+  </a>
+  <span class="ampel-site-footer-links__legal">
+    <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+    <a href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a>
+  </span>
+</nav>
