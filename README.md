@@ -26,7 +26,7 @@ Dieses Repository enthält einen einfachen GitHub-Pages/Jekyll-Aufbau für die A
 
 GitHub Pages unterstützt statische Jekyll-Websites direkt. Dadurch braucht dieses Repository kein Node.js, kein npm und kein separates Dokumentationssystem wie MkDocs oder Docusaurus.
 
-Just the Docs wird für GitHub Pages als fest versioniertes Remote-Theme eingebunden. Dadurch kann GitHub Pages die Website direkt aus dem Quell-Branch mit Jekyll bauen.
+Just the Docs wird als fest versioniertes Gem eingebunden. Dadurch funktionieren lokale Builds ohne zusätzlichen Download des Themes während des Jekyll-Starts.
 
 ## Wichtige Dateien
 

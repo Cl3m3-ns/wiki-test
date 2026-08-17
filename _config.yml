@@ -4,7 +4,7 @@ description: Statischer Markdown-Implementationsleitfaden für das AMPEL-Projekt
 url: "https://cl3m3-ns.github.io"
 baseurl: "/wiki/test"
 
-remote_theme: just-the-docs/just-the-docs@v0.12.0
+theme: just-the-docs
 permalink: pretty
 
 search_enabled: true
@@ -24,7 +24,6 @@ last_edit_timestamp: true
 last_edit_time_format: "%d.%m.%Y"
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-relative-links
   - jekyll-seo-tag
 
