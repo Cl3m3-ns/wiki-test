@@ -1,1 +1,0 @@
-https://brand.github.com/foundations/logo

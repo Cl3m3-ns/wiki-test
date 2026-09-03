@@ -1,15 +1,3 @@
----
-title: 1.4 Templates für Studien
-layout: default
-parent: 1 Bauanleitung
-nav_order: 4
-has_children: true
-doc_order: 11
-last_modified_date: 2026-06-19
-authors:
-  - AMPEL-Team
----
-
 # 1.4 Templates für Studien
 
 Vorlagen und Bausteine für die Planung und Durchführung von Studien.

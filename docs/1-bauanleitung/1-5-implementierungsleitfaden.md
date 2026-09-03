@@ -1,15 +1,3 @@
----
-title: 1.5 Implementierungsleitfaden
-layout: default
-parent: 1 Bauanleitung
-nav_order: 5
-has_children: true
-doc_order: 17
-last_modified_date: 2026-06-19
-authors:
-  - AMPEL-Team
----
-
 # 1.5 Implementierungsleitfaden
 
 Der technische Implementierungsleitfaden wird extra veröffentlicht. Diese Übersicht fasst die geplanten Bausteine zusammen.

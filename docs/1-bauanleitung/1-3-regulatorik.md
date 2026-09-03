@@ -1,15 +1,3 @@
----
-title: 1.3 Regulatorik
-layout: default
-parent: 1 Bauanleitung
-nav_order: 3
-has_children: true
-doc_order: 4
-last_modified_date: 2026-06-19
-authors:
-  - AMPEL-Team
----
-
 # 1.3 Regulatorik
 
 Überblick über die regulatorischen Anforderungen entlang des Lebenszyklus.
