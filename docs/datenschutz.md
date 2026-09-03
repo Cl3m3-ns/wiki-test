@@ -1,12 +1,3 @@
----
-title: Datenschutz
-layout: default
-permalink: /datenschutz/
-nav_exclude: true
-search_exclude: true
-last_modified_date: 2026-08-17
----
-
 # Datenschutzerklärung
 
 Diese Datenschutzerklärung informiert über die Verarbeitung personenbezogener Daten beim Besuch des AMPEL Wikis. Das Wiki ist eine statische Website, die über GitHub Pages bereitgestellt wird.

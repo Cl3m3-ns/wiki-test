@@ -1,7 +1,8 @@
-.bundle/
-.jekyll-cache/
-.sass-cache/
-_site/
-vendor/
-obsidian/
+docs/node_modules/
+docs/.vitepress/.temp/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+.DS_Store
+Thumbs.db
 .obsidian/
+docs/.obsidian/

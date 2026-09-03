@@ -1,201 +1,86 @@
----
-last_modified_date: 2026-06-18
-authors:
-  - AMPEL-Team
----
-
 # AMPEL Wiki
 
-Dieses Repository enthält einen einfachen GitHub-Pages/Jekyll-Aufbau für die AMPEL-Wiki-Dokumentation. Die Dokumentationsinhalte liegen getrennt im Ordner `docs/` und bleiben normale Markdown-Dateien; GitHub Pages baut daraus automatisch eine statische Website mit dem Jekyll-Theme Just the Docs.
+Dieses Repository enthält die AMPEL-Wiki als statische Dokumentationswebsite mit [VitePress](https://vitepress.dev/). Das VitePress-Projekt liegt vollständig im Ordner `docs/` und kann später unverändert als Paket in ein Monorepo aufgenommen werden.
 
-## Screenshots
+## Inhalt und Struktur
 
-**Landing Page**
+- `docs/index.md` ist die Startseite mit den Einstiegen in Bauanleitung und Evidenzsammlung.
+- `docs/*.md` und die Unterordner enthalten die eigentlichen Wiki-Inhalte.
+- `docs/.vitepress/config.ts` enthält Navigation, Suche, Seitentexte und Metadaten.
+- `docs/.vitepress/theme/` erweitert das VitePress-Standardtheme um AMPEL-Farben und den Projektfooter.
+- `docs/public/` enthält Logos, Bilder und die Social-Preview.
 
-![Screenshot der AMPEL-Wiki-Landing-Page](assets/images/readme-screenshot-landing.png)
-
-**Start und Übersicht – YouTube-Video und Code-Highlighting**
-
-![Screenshot der Start-und-Übersicht-Seite mit YouTube-Video und Syntax-Highlighting](assets/images/readme-screenshot-start.png)
-
-**Footer mit Seitennavigation und Logos**
-
-![Screenshot des Footers mit Autor:innen, Seitennavigation und Logos](assets/images/readme-screenshot-footer.png)
-
-## Warum Jekyll
-
-GitHub Pages unterstützt statische Jekyll-Websites direkt. Dadurch braucht dieses Repository kein Node.js, kein npm und kein separates Dokumentationssystem wie MkDocs oder Docusaurus.
-
-Just the Docs wird als fest versioniertes Gem eingebunden. Dadurch funktionieren lokale Builds ohne zusätzlichen Download des Themes während des Jekyll-Starts.
-
-## Wichtige Dateien
-
-- `_config.yml` konfiguriert Titel, Beschreibung, Theme, Basis-URL, aktivierte Suche und Jekyll-Plugins.
-- `index.md` ist die reduzierte Landing Page mit den zwei Einstiegskacheln (Bauanleitung und Evidenzsammlung).
-- `docs/0-start-und-uebersicht.md` enthält die Startseitenübersicht mit Kapitel-, Medien- und Codebeispielen.
-- `docs/` enthält die Kapiteldateien und Unterordner mit den eigentlichen Markdown-Inhalten.
-- `_sass/custom/custom.scss` enthält die einfachen Farb- und Layout-Anpassungen.
-- `_includes/footer_custom.html` zeigt Autor:innen, erzeugt automatisch die vorherige und nächste Seite aus `doc_order` und enthält die Footer-Links.
-- `Gemfile` definiert die Abhängigkeiten für lokale Builds.
-
-## Markdown-Seiten
-
-Jede Seite hat oben ein Jekyll-Front-Matter. Beispiel:
+Reguläre Inhaltsseiten brauchen kein YAML-Frontmatter. Eine neue Seite beginnt direkt mit ihrer H1-Überschrift:
 
 ```md
----
-title: 2.1 Technische Voraussetzungen
-layout: default
-parent: 2 Voraussetzungen für die Übertragung
-nav_order: 1
-doc_order: 3
-last_modified_date: 2026-06-18
-authors:
-  - AMPEL-Team
----
+# 1.6 Neues Thema
+
+Hier beginnt der Inhalt.
 ```
 
-Danach folgt normaler Markdown-Inhalt.
+Anschließend wird die Seite an der gewünschten Position in der `sidebar` von `docs/.vitepress/config.ts` eingetragen. Diese Reihenfolge steuert zugleich die Links „Vorherige Seite“ und „Nächste Seite“.
 
-## Front-Matter-Properties
+Nur die besondere Startseite `docs/index.md` verwendet minimales Frontmatter für das VitePress-Home-Layout.
 
-Die wichtigsten Properties pro Seite sind:
+## Lokale Entwicklung
 
-- `title` ist der sichtbare Seitentitel in Navigation und Browser.
-- `layout` ist normalerweise `default`; die Startseite nutzt `home`.
-- `nav_order` bestimmt die Reihenfolge in der Seitenleiste.
-- `parent` ordnet eine Seite unter einer übergeordneten Seite ein.
-- `grand_parent` wird bei tiefer verschachtelten Seiten genutzt.
-- `has_children: true` markiert Übersichtsseiten mit Unterseiten.
-- `doc_order` bestimmt die lineare Reihenfolge für "Vorherige Seite" und "Nächste Seite".
-- `last_modified_date` wird im Footer als "Zuletzt bearbeitet" angezeigt. Format: `YYYY-MM-DD`.
-- `authors` ist eine Liste von Autor:innen und wird im Footer angezeigt.
-- `author` kann als einzelner Fallback-Wert genutzt werden; für neue Seiten ist `authors` empfohlen.
-- `permalink` setzt bei Bedarf eine feste URL.
-- `nav_exclude: true` blendet Seiten aus der Seitenleiste aus.
-
-Beispiel für mehrere Autor:innen:
-
-```md
----
-title: Beispielseite
-layout: default
-nav_order: 7
-doc_order: 28
-last_modified_date: 2026-06-18
-authors:
-  - AMPEL-Team
-  - CDS-Netzwerk
----
-```
-
-## Navigation
-
-Just the Docs baut die Seitenleiste aus dem Front-Matter:
-
-- `title` ist der sichtbare Name der Seite.
-- `nav_order` bestimmt die Reihenfolge innerhalb derselben Ebene.
-- `parent` ordnet eine Seite unter einer übergeordneten Seite ein.
-- `grand_parent` wird für tiefere Ebenen genutzt.
-- `has_children: true` markiert Übersichtsseiten mit Unterseiten.
-- `doc_order` bestimmt die lineare Reihenfolge für die Links "Vorherige Seite" und "Nächste Seite".
-
-Die Startseite `index.md` hat kein `doc_order`, damit sie nicht in der vorherigen/nächsten Seitennavigation erscheint.
-
-## Neue Seite hinzufügen
-
-1. Markdown-Datei im Ordner `docs/` anlegen, zum Beispiel `docs/2-voraussetzungen-fuer-die-uebertragung/2-4-neues-thema.md`.
-2. Front-Matter einfügen:
-
-```md
----
-title: 2.4 Neues Thema
-layout: default
-parent: 2 Voraussetzungen für die Übertragung
-nav_order: 4
-doc_order: 6
-last_modified_date: 2026-06-18
-authors:
-  - AMPEL-Team
----
-```
-
-3. `nav_order` passend zur Seitenleiste setzen.
-4. `doc_order` passend zur linearen Lesereihenfolge setzen.
-5. Links mit relativen Markdown-Pfaden schreiben, zum Beispiel `[Technische Voraussetzungen](2-1-technische-voraussetzungen.md)`.
-
-## Neue verschachtelte Sektion hinzufügen
-
-Eine Übersichtsseite mit Unterseiten bekommt `has_children: true`:
-
-```md
----
-title: 3.4 Neue Sektion
-layout: default
-parent: 3 Technische Aspekte zur Übertragung
-nav_order: 4
-has_children: true
-doc_order: 22
-last_modified_date: 2026-06-18
-authors:
-  - AMPEL-Team
----
-```
-
-Eine Unterseite darunter verweist auf diese Seite:
-
-```md
----
-title: 3.4.1 Unterthema
-layout: default
-parent: 3.4 Neue Sektion
-grand_parent: 3 Technische Aspekte zur Übertragung
-nav_order: 1
-doc_order: 23
-last_modified_date: 2026-06-18
-authors:
-  - AMPEL-Team
----
-```
-
-## Farben und Layout anpassen
-
-Die Datei `_sass/custom/custom.scss` enthält zentrale Werte wie:
-
-- `$ampel-background`
-- `$ampel-text`
-- `$ampel-link`
-- `$ampel-sidebar-background`
-- `$ampel-heading`
-- `$ampel-content-width`
-
-Diese Werte können angepasst werden, ohne das Theme selbst zu kopieren.
-
-## Lokal ausführen
-
-Ruby und Bundler müssen lokal installiert sein. Danach:
+Voraussetzung ist Node.js 20 oder neuer.
 
 ```bash
-bundle install
-bundle exec jekyll serve
+cd docs
+npm ci
+npm run docs:dev
 ```
 
-Die lokale Vorschau ist dann normalerweise unter `http://localhost:4000/ampel-wiki/` erreichbar.
+VitePress zeigt anschließend die lokale Adresse im Terminal an.
 
-Für eine lokale Kopie, die direkt per Doppelklick auf `_site/index.html` funktioniert:
+## Produktionsbuild
 
 ```bash
-bundle exec ruby scripts/build-local-site.rb
+cd docs
+npm run docs:build
+npm run docs:preview
 ```
 
-## Auf GitHub Pages veröffentlichen
+Der Build liegt unter `docs/.vitepress/dist/`. Für einen Unterpfad kann die Base-URL gesetzt werden:
 
-1. In GitHub unter `Settings` > `Pages` bei `Build and deployment` als Quelle `Deploy from a branch` wählen.
-2. Als Branch `main` und als Ordner `/ (root)` auswählen und speichern.
-3. Änderungen auf den Branch `main` pushen. GitHub Pages baut die Jekyll-Seite automatisch.
+```bash
+DOCS_BASE=/wiki-test/ npm run docs:build
+```
 
-Die erwartete Projekt-URL ist:
+Unter PowerShell:
 
-```txt
-https://ampel-cdss-org.github.io/ampel-wiki/
+```powershell
+$env:DOCS_BASE = "/wiki-test/"
+npm run docs:build
+```
+
+## Verlinkung und Assets
+
+Interne Seiten werden mit normalen relativen Markdown-Links verknüpft:
+
+```md
+[Regulatorik](1-bauanleitung/1-3-regulatorik.md)
+```
+
+Öffentliche Bilder liegen unter `docs/public/assets/images/` und werden vom Markdown aus mit einem absoluten Site-Pfad eingebunden:
+
+```md
+![AMPEL Projektlogo](/assets/images/brand-default-logo.svg)
+```
+
+VitePress berücksichtigt dabei automatisch die konfigurierte Base-URL.
+
+## GitHub Pages
+
+Der Workflow `.github/workflows/pages.yml` baut Pull Requests zur Prüfung. Bei
+Änderungen auf `main` oder einem manuellen Start auf `main` wird die Website mit
+`DOCS_BASE=/wiki-test/` gebaut und aus `docs/.vitepress/dist/` veröffentlicht.
+
+Vor der ersten Veröffentlichung muss im GitHub-Repository unter
+**Settings → Pages → Build and deployment → Source** einmalig **GitHub Actions**
+ausgewählt werden. Danach ist die Website unter folgender Adresse erreichbar:
+
+```text
+https://cl3m3-ns.github.io/wiki-test/
 ```

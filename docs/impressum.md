@@ -1,12 +1,3 @@
----
-title: Impressum
-layout: default
-permalink: /impressum/
-nav_exclude: true
-search_exclude: true
-last_modified_date: 2026-08-17
----
-
 # Impressum
 
 ## Angaben gemäß § 18 Abs. 2 MStV

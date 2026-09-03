@@ -1,14 +1,3 @@
----
-title: 1.1 Übersicht
-layout: default
-parent: 1 Bauanleitung
-nav_order: 1
-doc_order: 2
-last_modified_date: 2026-06-19
-authors:
-  - AMPEL-Team
----
-
 # 1.1 Übersicht
 
 Diese Seite gibt einen Überblick über die Bauanleitung und ihren Aufbau.
