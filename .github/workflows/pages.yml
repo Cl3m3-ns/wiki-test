@@ -39,8 +39,8 @@ jobs:
       - name: Build VitePress
         working-directory: docs
         env:
-          DOCS_BASE: /ampel-wiki/
-          DOCS_ORIGIN: https://ampel-cdss-org.github.io
+          DOCS_BASE: /wiki-test/
+          DOCS_ORIGIN: https://cl3m3-ns.github.io
         run: npm run docs:build
 
       - name: Configure GitHub Pages

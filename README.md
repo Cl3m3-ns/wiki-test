@@ -45,13 +45,13 @@ npm run docs:preview
 Der Build liegt unter `docs/.vitepress/dist/`. Für einen Unterpfad kann die Base-URL gesetzt werden:
 
 ```bash
-DOCS_BASE=/ampel-wiki/ npm run docs:build
+DOCS_BASE=/wiki-test/ npm run docs:build
 ```
 
 Unter PowerShell:
 
 ```powershell
-$env:DOCS_BASE = "/ampel-wiki/"
+$env:DOCS_BASE = "/wiki-test/"
 npm run docs:build
 ```
 
@@ -75,12 +75,12 @@ VitePress berücksichtigt dabei automatisch die konfigurierte Base-URL.
 
 Der Workflow `.github/workflows/pages.yml` baut Pull Requests zur Prüfung. Bei
 Änderungen auf `main` oder einem manuellen Start auf `main` wird die Website mit
-`DOCS_BASE=/ampel-wiki/` gebaut und aus `docs/.vitepress/dist/` veröffentlicht.
+`DOCS_BASE=/wiki-test/` gebaut und aus `docs/.vitepress/dist/` veröffentlicht.
 
 Vor der ersten Veröffentlichung muss im GitHub-Repository unter
 **Settings → Pages → Build and deployment → Source** einmalig **GitHub Actions**
 ausgewählt werden. Danach ist die Website unter folgender Adresse erreichbar:
 
 ```text
-https://ampel-cdss-org.github.io/ampel-wiki/
+https://cl3m3-ns.github.io/wiki-test/
 ```

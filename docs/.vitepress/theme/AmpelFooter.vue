@@ -25,7 +25,7 @@ import { withBase } from "vitepress";
           />
         </a>
         <a
-          href="https://github.com/AMPEL-CDSS-ORG/ampel-wiki"
+          href="https://github.com/Cl3m3-ns/wiki-test"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="AMPEL Wiki auf GitHub"

@@ -16,7 +16,7 @@ hero:
       link: /0-start-und-uebersicht
     - theme: alt
       text: Auf GitHub ansehen
-      link: https://github.com/AMPEL-CDSS-ORG/ampel-wiki
+      link: https://github.com/Cl3m3-ns/wiki-test
 
 features:
   - title: "Bauanleitung"

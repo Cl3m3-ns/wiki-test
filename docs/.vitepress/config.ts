@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 const configuredBase = process.env.DOCS_BASE || "/";
 const base = `/${configuredBase.replace(/^\/+|\/+$/g, "")}/`.replace("//", "/");
-const siteOrigin = process.env.DOCS_ORIGIN || "https://ampel-cdss-org.github.io";
+const siteOrigin = process.env.DOCS_ORIGIN || "https://cl3m3-ns.github.io";
 const canonicalUrl = new URL(base, `${siteOrigin}/`).href;
 
 export default defineConfig({
@@ -43,7 +43,7 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Start und Übersicht", link: "/0-start-und-uebersicht" },
-      { text: "GitHub", link: "https://github.com/AMPEL-CDSS-ORG/ampel-wiki" },
+      { text: "GitHub", link: "https://github.com/Cl3m3-ns/wiki-test" },
     ],
     sidebar: [
       { text: "0 Start und Übersicht", link: "/0-start-und-uebersicht" },
@@ -145,7 +145,7 @@ export default defineConfig({
       label: "Auf dieser Seite",
     },
     editLink: {
-      pattern: "https://github.com/AMPEL-CDSS-ORG/ampel-wiki/edit/main/docs/:path",
+      pattern: "https://github.com/Cl3m3-ns/wiki-test/edit/main/docs/:path",
       text: "Diese Seite auf GitHub bearbeiten",
     },
     lastUpdated: {
@@ -159,7 +159,7 @@ export default defineConfig({
       next: "Nächste Seite",
     },
     socialLinks: [
-      { icon: "github", link: "https://github.com/AMPEL-CDSS-ORG/ampel-wiki" },
+      { icon: "github", link: "https://github.com/Cl3m3-ns/wiki-test" },
     ],
     sidebarMenuLabel: "Menü",
     returnToTopLabel: "Nach oben",
