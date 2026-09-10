@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Implementationsleitfaden
+pageClass: home-background
+title: AMPEL WIKI
 
 hero:
   name: "AMPEL Wiki"

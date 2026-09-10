@@ -11,6 +11,22 @@
   --vp-home-hero-image-filter: blur(46px);
 }
 
+.home-background {
+  /* leichtes Overlay für die Lesbarkeit */
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    );
+/* Navigation oben über dem Bild transparent */
+  --vp-nav-home-bg-color: transparent;
+  background-image: url('../../public/assets/images/AMPEL-Hintergrund3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
 .dark {
   --vp-c-brand-1: #63b3ed;
   --vp-c-brand-2: #90cdf4;
@@ -20,13 +36,6 @@
   --vp-c-text-1: #edf2f7;
   --vp-c-text-2: #b8c2cc;
   --vp-home-hero-name-color: #f7fafc;
-}
-
-.VPNavBarTitle .logo,
-.VPHomeHero .image-src {
-  box-sizing: content-box;
-  border-radius: 10px;
-  background: #ffffff;
 }
 
 .VPNavBarTitle .logo {
@@ -42,7 +51,8 @@
 }
 
 .dark .VPNavBarTitle .logo,
-.dark .VPHomeHero .image-src {
+.dark .VPHomeHero .image-src,
+.dark .ampel-footer {
   background: transparent;
 }
 
@@ -62,10 +72,10 @@
 }
 
 .VPFeature:first-child::before {
-  background: #9b000d;
+  background: #9b9800;
 }
 
-.VPFeature:nth-child(2)::before {
+.VPFeature:nth-child(0)::before {
   background: #005ea8;
 }
 
@@ -130,10 +140,6 @@
   border: 0;
 }
 
-.ampel-footer {
-  border-top: 1px solid var(--vp-c-divider);
-  background: var(--vp-c-bg-alt);
-}
 
 .ampel-footer__inner {
   display: flex;
