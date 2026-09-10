@@ -43,6 +43,40 @@
   padding: 4px 8px;
 }
 
+/* Keep the home page dark without changing the reader's saved theme. */
+.home-background {
+  color-scheme: dark;
+  color: var(--vp-c-text-1);
+  --vp-c-default-1: var(--vp-c-gray-1);
+  --vp-c-default-2: var(--vp-c-gray-2);
+  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-soft: var(--vp-c-gray-soft);
+  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+  --vp-button-alt-text: var(--vp-c-text-1);
+  --vp-button-alt-hover-text: var(--vp-c-text-1);
+  --vp-button-alt-active-text: var(--vp-c-text-1);
+  --vp-button-alt-bg: var(--vp-c-default-3);
+  --vp-button-alt-hover-bg: var(--vp-c-default-2);
+  --vp-button-alt-active-bg: var(--vp-c-default-1);
+  --vp-nav-bg-color: var(--vp-c-bg);
+  --vp-nav-screen-bg-color: var(--vp-c-bg);
+}
+
+.home-background .VPNavBarAppearance,
+.home-background .VPNavScreenAppearance,
+.home-background .VPNavBarExtra .appearance,
+.home-background .ampel-footer__ampel-logo--dark {
+  display: none !important;
+}
+
+/* VitePress normally selects these images using the theme on <html>. */
+html .home-background .VPImage.dark,
+html .home-background .ampel-footer__ampel-logo--light {
+  display: block !important;
+}
+
 .VPHomeHero .image-src {
   max-width: 280px;
   max-height: 180px;

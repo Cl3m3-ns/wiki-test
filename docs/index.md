@@ -1,6 +1,6 @@
 ---
 layout: home
-pageClass: home-background
+pageClass: home-background dark
 title: AMPEL WIKI
 
 hero:
