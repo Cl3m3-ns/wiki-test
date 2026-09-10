@@ -24,18 +24,6 @@ import { withBase } from "vitepress";
             aria-hidden="true"
           />
         </a>
-        <a
-          href="https://github.com/Cl3m3-ns/wiki-test"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="AMPEL Wiki auf GitHub"
-        >
-          <img
-            class="ampel-footer__github-logo"
-            :src="withBase('/assets/images/GitHub_Lockup_Black_Clearspace.svg')"
-            alt="GitHub"
-          />
-        </a>
       </div>
       <nav class="ampel-footer__legal" aria-label="Rechtliche Hinweise">
         <a :href="withBase('/impressum.html')">Impressum</a>
