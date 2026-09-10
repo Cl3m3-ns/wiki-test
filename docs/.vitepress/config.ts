@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { version } from "../package.json";
 
 const configuredBase = process.env.DOCS_BASE || "/";
 const base = `/${configuredBase.replace(/^\/+|\/+$/g, "")}/`.replace("//", "/");
@@ -42,8 +43,13 @@ export default defineConfig({
     siteTitle: false,
     nav: [
       { text: "Home", link: "/" },
-      { text: "Start und Übersicht", link: "/0-start-und-uebersicht" },
-      { text: "GitHub", link: "https://github.com/Cl3m3-ns/wiki-test" },
+      {
+        text: `v${version}`,
+        items: [
+          { text: "Änderungsverlauf", link: "https://github.com/Cl3m3-ns/wiki-test/commits/main/" },
+          { text: "Entwicklung", link: "https://github.com/Cl3m3-ns/wiki-test/tree/main/" },
+        ],
+      },
     ],
     sidebar: [
       { text: "0 Start und Übersicht", link: "/0-start-und-uebersicht" },

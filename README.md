@@ -10,6 +10,8 @@ Dieses Repository enthält die AMPEL-Wiki als statische Dokumentationswebsite mi
 - `docs/.vitepress/theme/` erweitert das VitePress-Standardtheme um AMPEL-Farben und den Projektfooter.
 - `docs/public/` enthält Logos, Bilder und die Social-Preview.
 
+Die Versionsanzeige im Header übernimmt `version` aus `docs/package.json`. Für eine neue Version im Ordner `docs/` beispielsweise `npm version 0.2.0 --no-git-tag-version` ausführen; dadurch wird auch die Lockdatei aktualisiert.
+
 Reguläre Inhaltsseiten brauchen kein YAML-Frontmatter. Eine neue Seite beginnt direkt mit ihrer H1-Überschrift:
 
 ```md
