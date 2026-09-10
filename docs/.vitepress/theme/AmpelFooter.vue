@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { withBase } from "vitepress";
+import { useSidebar } from "vitepress/theme";
+
+const { hasSidebar } = useSidebar();
 </script>
 
 <template>
-  <footer class="ampel-footer">
+  <footer class="ampel-footer" :class="{ 'has-sidebar': hasSidebar }">
     <div class="ampel-footer__inner">
       <div class="ampel-footer__projects">
         <a
