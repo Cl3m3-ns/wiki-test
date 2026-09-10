@@ -19,6 +19,10 @@ hero:
       link: https://github.com/Cl3m3-ns/wiki-test
 
 features:
+  - title: "Techn. Bauanleitung"
+    details: "Architektur, Module, Schnittstellen und Installation für die technische Umsetzung."
+    link: /1-bauanleitung/1-5-implementierungsleitfaden
+    linkText: Zum Implementierungsleitfaden
   - title: "Regulatorische Bauanleitung"
     details: "Anforderungen zu Medizinprodukten, Eigenherstellung, klinischen Prüfungen und Datenschutz."
     link: /1-bauanleitung/1-3-regulatorik
@@ -27,12 +31,4 @@ features:
     details: "Für die medizinisch-wissenschaftliche Dokumentation, Algorithmen und Studienergebnisse."
     link: /2-evidenzsammlung
     linkText: Zur Evidenz
-  - title: "Techn. Bauanleitung"
-    details: "Architektur, Module, Schnittstellen und Installation für die technische Umsetzung."
-    link: /1-bauanleitung/1-5-implementierungsleitfaden
-    linkText: Zum Implementierungsleitfaden
-  - title: "QM Vorlagedokumente"
-    details: "QM-Dokumentation zu Prozessen, Verantwortlichkeiten und der Lenkung von Dokumenten."
-    link: /1-bauanleitung/1-2-qm-dokumentation
-    linkText: Zur QM-Dokumentation
 ---
