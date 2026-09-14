@@ -211,10 +211,10 @@ html .home-background .ampel-footer__ampel-logo--light {
   text-decoration: none;
 }
 
-.ampel-footer a:hover,
-.ampel-footer a:focus-visible {
-  color: var(--vp-c-brand-1);
-  text-decoration: underline;
+.home-background .ampel-footer__legal a,
+  .home-background .ampel-footer__legal a:hover,
+  .home-background .ampel-footer__legal a:focus-visible {
+  color: #faf8f8;
 }
 
 .ampel-footer img {
@@ -268,4 +268,5 @@ html:not(.dark) .ampel-footer__ampel-logo--dark,
   .ampel-footer__projects {
     flex-wrap: wrap;
   }
+
 }
