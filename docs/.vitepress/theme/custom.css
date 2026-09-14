@@ -71,6 +71,11 @@
   display: none !important;
 }
 
+.home-background .VPNavBarMenuLink[href="/"],
+.home-background .VPNavScreenMenuLink[href="/"] {
+  display: none;
+}
+
 /* VitePress normally selects these images using the theme on <html>. */
 html .home-background .VPImage.dark,
 html .home-background .ampel-footer__ampel-logo--light {
