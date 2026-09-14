@@ -109,8 +109,19 @@ html .home-background .ampel-footer__ampel-logo--light {
   background: #9b9800;
 }
 
-.VPFeature:nth-child(0)::before {
-  background: #005ea8;
+/* Card 1 */
+.VPFeatures .item:nth-child(1) .VPFeature::before {
+  background: #C44747;
+}
+
+/* Card 2 */
+.VPFeatures .item:nth-child(2) .VPFeature::before {
+  background: #D6A928;
+}
+
+/* Card 3 */
+.VPFeatures .item:nth-child(3) .VPFeature::before {
+  background: #4F8A5B;
 }
 
 .VPFeature:hover {
