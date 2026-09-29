@@ -4,9 +4,9 @@ Diese Wiki sammelt die Markdown-Dokumentation für das AMPEL-Projekt. Sie gliede
 
 ## Kapitel
 
-- [1 Bauanleitung](1-bauanleitung.md)
-- [2 Evidenzsammlung](2-evidenzsammlung.md)
-- [3 Beispiel neues Kapitel mit Unterkapitel](3-beispiel-neues-kapitel.md)
+- [1 Technische Bauanleitung](1-bauanleitung.md)
+- [2 Regulatorische Bauanleitung](/Open-Source-BA/overview.md)
+- [3 Evidenz](2-evidenzsammlung.md)
 
 ## Nutzung
 

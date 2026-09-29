@@ -20,13 +20,13 @@ hero:
       link: https://github.com/Cl3m3-ns/wiki-test
 
 features:
-  - title: "Techn. Bauanleitung"
+  - title: "Technische Bauanleitung"
     details: "Architektur, Module, Schnittstellen und Installation für die technische Umsetzung."
-    link: /1-bauanleitung/1-5-implementierungsleitfaden
-    linkText: Zum Implementierungsleitfaden
+    link: /1-bauanleitung
+    linkText: Zur Bauanleitung
   - title: "Regulatorische Bauanleitung"
     details: "Anforderungen zu Medizinprodukten, Eigenherstellung, klinischen Prüfungen und Datenschutz."
-    link: /1-bauanleitung/1-3-regulatorik
+    link: /Open-Source-BA/overview.md
     linkText: Zur Regulatorik
   - title: "Evidenz"
     details: "Für die medizinisch-wissenschaftliche Dokumentation, Algorithmen und Studienergebnisse."

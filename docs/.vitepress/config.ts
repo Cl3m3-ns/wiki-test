@@ -52,9 +52,9 @@ export default defineConfig({
       },
     ],
     sidebar: [
-      { text: "0 Start und Übersicht", link: "/0-start-und-uebersicht" },
+      { text: "Start und Übersicht", link: "0-start-und-uebersicht.md" },
       {
-        text: "1 Bauanleitung",
+        text: "Technische Bauanleitung",
         link: "/1-bauanleitung",
         collapsed: false,
         items: [
@@ -101,11 +101,27 @@ export default defineConfig({
         ],
       },
       {
-        text: "2 Evidenzsammlung",
-        link: "/2-evidenzsammlung",
+        text: "Regulatische Bauanleitung",
+        link: "/Open-Source-BA/overview.md",
         collapsed: false,
         items: [
-          {
+          { text: "1. Medical devices (MDR)", link : "/Open-Source-BA/mdr-medical-devices.md"},
+          { text: "2. AI Act", link : "/Open-Source-BA/ai-act.md"},
+          { text: "3. In-house medical device software (MDSW)", link : "/Open-Source-BA/in-house-mdsw.md"}, 
+          { text: "4. Quality management system (QMS)", link : "/Open-Source-BA/quality-management-system.md"},
+          { text: "5. Data protection (GDPR)", link : "/Open-Source-BA/data-protection.md"},
+          { text: "6. Studies", link : "/Open-Source-BA/studies.md"},
+          { text: "7. Open source", link : "/Open-Source-BA/open-source.md"},
+          { text: "8. Practical advice", link : "/Open-Source-BA/practical-advice.md"},
+          { text: "9. More resources", link : "/Open-Source-BA/resources.md"},
+        ],
+      },
+      {
+        text: "Evidenz",
+        link: "/3-beispiel-neues-kapitel",
+        collapsed: true,
+        items: [
+                   {
             text: "2.1 Medizinisch-wissenschaftliche Dokumentation",
             link: "/2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation",
             collapsed: true,
@@ -114,15 +130,6 @@ export default defineConfig({
               { text: "2.1.2 Sonstige Studienergebnisse", link: "/2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation/2-1-2-sonstige-studienergebnisse" },
             ],
           },
-        ],
-      },
-      {
-        text: "3 Beispiel neues Kapitel",
-        link: "/3-beispiel-neues-kapitel",
-        collapsed: true,
-        items: [
-          { text: "Unterseite Beispiel", link: "/3-beispiel-neues-kapitel/unterseite-beispiel" },
-          { text: "Unterseite Beispiel 2", link: "/3-beispiel-neues-kapitel/unterseite-beispiel-2" },
         ],
       },
     ],
