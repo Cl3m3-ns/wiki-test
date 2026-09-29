@@ -9,7 +9,7 @@ hero:
   tagline: "Bauanleitung und Evidenzsammlung für die Entwicklung und Bewertung klinischer Entscheidungsunterstützung."
   image:
     light: /assets/images/brand-default-logo.svg
-    dark: /assets/images/brand-default-logo-dark.svg
+    dark: /assets/images/brand-default-logo.svg
     alt: AMPEL Wiki
   actions:
     - theme: brand

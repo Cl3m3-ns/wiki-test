@@ -36,8 +36,8 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: {
-      light: "/assets/images/ampel-wave.svg",
-      dark: "/assets/images/ampel-wave.svg",
+      light: "/assets/images/brand-default-logo.svg",
+      dark: "/assets/images/brand-default-logo-dark.svg",
       alt: "AMPEL-Welle",
     },
     siteTitle: false,
