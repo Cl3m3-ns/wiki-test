@@ -103,7 +103,7 @@ export default defineConfig({
       {
         text: "Regulatische Bauanleitung",
         link: "/Open-Source-BA/overview.md",
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: "1. Medical devices (MDR)", link : "/Open-Source-BA/mdr-medical-devices.md"},
           { text: "2. AI Act", link : "/Open-Source-BA/ai-act.md"},
@@ -111,7 +111,16 @@ export default defineConfig({
           { text: "4. Quality management system (QMS)", link : "/Open-Source-BA/quality-management-system.md"},
           { text: "5. Data protection (GDPR)", link : "/Open-Source-BA/data-protection.md"},
           { text: "6. Studies", link : "/Open-Source-BA/studies.md"},
-          { text: "7. Open source", link : "/Open-Source-BA/open-source.md"},
+          { 
+            text: "7. Open source", 
+            link : "/Open-Source-BA/open-source.md",
+            collapsed: true,
+            items: [
+                  { text: "7.1 Test Plan", link: "/Open-Source-QM/test-plan.md" },
+                  { text: "7.2 Architecture", link: "/Open-Source-QM/architecture.md" },
+                  { text: "7.3 Risk Table", link: "/Open-Source-QM/risk-table.md" },
+                ],
+        },
           { text: "8. Practical advice", link : "/Open-Source-BA/practical-advice.md"},
           { text: "9. More resources", link : "/Open-Source-BA/resources.md"},
         ],
