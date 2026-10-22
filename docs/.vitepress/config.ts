@@ -11,6 +11,25 @@ function wikiLinks(md: any) {
     state.src = state.src.replace(/<(\s*\d)/g, "&lt;$1");
   });
 
+  md.inline.ruler.before("image", "wiki_image", (state: any, silent: boolean) => {
+    const start = state.pos;
+    if (state.src.slice(start, start + 3) !== "![[") return false;
+    const end = state.src.indexOf("]]", start + 3);
+    if (end < 0) return false;
+    if (!silent) {
+      const filename = state.src.slice(start + 3, end).trim();
+      const token = state.push("image", "img", 0);
+      token.attrs = [
+        ["src", `assets/${filename}`],
+        ["alt", filename],
+      ];
+      token.children = [];
+      token.content = filename;
+    }
+    state.pos = end + 2;
+    return true;
+  });
+
   md.inline.ruler.before("html_inline", "literal_comparison", (state: any, silent: boolean) => {
     const start = state.pos;
     if (state.src.charCodeAt(start) !== 0x3c || !/\d/.test(state.src[start + 1] || "")) return false;
@@ -35,7 +54,10 @@ function wikiLinks(md: any) {
     if (silent) return true;
 
     const display = label || target;
-    const destination = wikiTargets[target.replace(/\.md$/, "")];
+    const imageTarget = /\.(png|jpe?g|gif|svg|webp)$/i.test(target)
+      ? `assets/${target}`
+      : undefined;
+    const destination = wikiTargets[target.replace(/\.md$/, "")] || imageTarget;
     if (!destination) {
       const text = state.push("text", "", 0);
       text.content = display;
