@@ -1,12 +1,73 @@
 import { defineConfig } from "vitepress";
 import { version } from "../package.json";
 
+function wikiLinks(md: any) {
+  const wikiTargets: Record<string, string> = {
+    architecture: "architecture.md",
+    "risk-table": "risk-table.md",
+  };
+
+  md.core.ruler.before("block", "escape_numeric_comparisons", (state: any) => {
+    state.src = state.src.replace(/<(\s*\d)/g, "&lt;$1");
+  });
+
+  md.inline.ruler.before("html_inline", "literal_comparison", (state: any, silent: boolean) => {
+    const start = state.pos;
+    if (state.src.charCodeAt(start) !== 0x3c || !/\d/.test(state.src[start + 1] || "")) return false;
+    if (!silent) {
+      const token = state.push("text", "", 0);
+      token.content = "<";
+    }
+    state.pos += 1;
+    return true;
+  });
+
+  md.inline.ruler.before("emphasis", "wiki_link", (state: any, silent: boolean) => {
+    const start = state.pos;
+    if (state.src.charCodeAt(start) !== 0x5b || state.src.charCodeAt(start + 1) !== 0x5b) return false;
+
+    const end = state.src.indexOf("]]", start + 2);
+    if (end < 0) return false;
+
+    const value = state.src.slice(start + 2, end);
+    const [target, label] = value.split("|", 2).map((part) => part.trim());
+    if (!target) return false;
+    if (silent) return true;
+
+    const display = label || target;
+    const destination = wikiTargets[target.replace(/\.md$/, "")];
+    if (!destination) {
+      const text = state.push("text", "", 0);
+      text.content = display;
+      state.pos = end + 2;
+      return true;
+    }
+
+    const open = state.push("link_open", "a", 1);
+    open.attrs = [["href", destination]];
+    const text = state.push("text", "", 0);
+    text.content = display;
+    state.push("link_close", "a", -1);
+    state.pos = end + 2;
+    return true;
+  });
+}
+
 const configuredBase = process.env.DOCS_BASE || "/";
 const base = `/${configuredBase.replace(/^\/+|\/+$/g, "")}/`.replace("//", "/");
 const siteOrigin = process.env.DOCS_ORIGIN || "https://cl3m3-ns.github.io";
 const canonicalUrl = new URL(base, `${siteOrigin}/`).href;
 
 export default defineConfig({
+  markdown: {
+    // Comparison values such as `<90%` in tables must stay Markdown text,
+    // not be interpreted as raw HTML by Vue's template compiler.
+    html: false,
+    config: (md) => {
+      md.options.html = false;
+      md.use(wikiLinks);
+    },
+  },
   lang: "de-DE",
   title: "AMPEL Wiki",
   titleTemplate: ":title | AMPEL Wiki",
