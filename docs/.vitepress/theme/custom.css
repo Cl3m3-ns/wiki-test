@@ -1,4 +1,5 @@
 :root {
+  --vp-nav-height: 116px;
   --vp-c-brand-1: #005ea8;
   --vp-c-brand-2: #004f8f;
   --vp-c-brand-3: #003f73;
@@ -9,6 +10,12 @@
   --vp-home-hero-name-color: #102a43;
   --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(155, 0, 13, 0.16), rgba(0, 94, 168, 0.18));
   --vp-home-hero-image-filter: blur(46px);
+}
+
+@media (max-width: 959px) {
+  :root {
+    --vp-nav-height: 116px;
+  }
 }
 
 .home-background {
@@ -39,7 +46,7 @@
 }
 
 .VPNavBarTitle .logo {
-  height: 34px;
+  height: 100px;
   padding: 4px 8px;
 }
 
@@ -89,6 +96,31 @@
 .home-background .VPNavBar .divider,
 .home-background .VPNavBar .divider-line {
   display: none !important;
+}
+
+/* Keep the article header and its local navigation visually continuous. */
+.VPNavBar,
+.VPLocalNav {
+  border-bottom: 0 !important;
+}
+
+.VPNavBar .divider,
+.VPNavBar .divider-line {
+  display: none !important;
+}
+
+.VPNavBarTitle.has-sidebar .title {
+  border-bottom-color: transparent !important;
+}
+
+@media (min-width: 960px) {
+  .VPSidebar {
+    padding-top: calc(var(--vp-nav-height) + 16px) !important;
+  }
+
+  .VPSidebar .curtain {
+    top: calc(-1 * var(--vp-nav-height)) !important;
+  }
 }
 
 .home-background .VPNavBarAppearance,
