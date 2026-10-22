@@ -43,10 +43,28 @@
   padding: 4px 8px;
 }
 
+/* The landing page already presents the AMPEL brand in the hero. Keep its
+   navbar focused on search, without changing article-page navigation. */
+.home-background .VPNavBarTitle {
+  width: 0;
+  min-width: 0;
+  margin-right: 0;
+}
+
+.home-background .VPNavBarTitle .logo {
+  display: none;
+}
+
+.home-background .VPNavBarSearch {
+  margin-left: 0;
+}
+
 /* Keep the home page dark without changing the reader's saved theme. */
 .home-background {
   color-scheme: dark;
   color: var(--vp-c-text-1);
+  --vp-nav-bg-color: transparent;
+  --vp-nav-screen-bg-color: transparent;
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
@@ -60,8 +78,17 @@
   --vp-button-alt-bg: var(--vp-c-default-3);
   --vp-button-alt-hover-bg: var(--vp-c-default-2);
   --vp-button-alt-active-bg: var(--vp-c-default-1);
-  --vp-nav-bg-color: var(--vp-c-bg);
-  --vp-nav-screen-bg-color: var(--vp-c-bg);
+}
+
+/* Keep the transparent landing-page header transparent after scrolling too. */
+.home-background .VPNavBar,
+.home-background .VPNavBar .content-body {
+  background-color: transparent !important;
+}
+
+.home-background .VPNavBar .divider,
+.home-background .VPNavBar .divider-line {
+  display: none !important;
 }
 
 .home-background .VPNavBarAppearance,
