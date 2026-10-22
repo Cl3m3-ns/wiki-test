@@ -50,6 +50,12 @@
   padding: 4px 8px;
 }
 
+@media (min-width: 960px) {
+  .VPNavBar .content-body {
+    transform: translateY(12px);
+  }
+}
+
 /* The landing page already presents the AMPEL brand in the hero. Keep its
    navbar focused on search, without changing article-page navigation. */
 .home-background .VPNavBarTitle {
