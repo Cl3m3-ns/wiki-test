@@ -91,13 +91,9 @@ User interface for querying score results.
 
 Figure 2. Overview of the interactions between all system components in LAMPE. 
 
-Editable source: [[LAMPE-system-interactions-en.drawio]]
-
 ## 2.2 Data Source Component
 
 ![[LAMPE-data-source-component-en.drawio.svg]]
-
-Editable source: [[LAMPE-data-source-component-en.drawio]]
 
 | ID | Name | Priority | Traceability | Risk control measure? | SOUP? | Dependencies |
 |---|---|---|---|---|---|---|
@@ -111,8 +107,6 @@ The component consists of a Debezium instance (see SOUP) that monitors the trans
 
 ![[LAMPE-data-stream-component-en.drawio.svg]]
 
-Editable source: [[LAMPE-data-stream-component-en.drawio]]
-
 | ID | Name | Priority | Traceability | Risk control measure? | SOUP? | Dependencies |
 |---|---|---|---|---|---|---|
 | DS_STREAM | Streaming component | High | SyA_ES_HS_VM; SyA_BU_INST_DOCKER; SyA_NFA_SA_CONT; SyA_NFA_SA_SAND; SyA_NFA_L_EV; SyA_NFA_SQ_SL | No | Yes, implemented by SOUP_AK |  |
@@ -124,8 +118,6 @@ The component consists of a single-node Apache Kafka instance and receives JSON 
 ## 2.4 ETL Component
 
 ![[LAMPE-etl-components-en.drawio.svg]]
-
-Editable source: [[LAMPE-etl-components-en.drawio]]
 
 | ID | Name | Priority | Traceability | Risk control measure? | SOUP? | Dependencies |
 |---|---|---|---|---|---|---|
@@ -170,8 +162,6 @@ Raw messages for the case data stream from the streaming component are converted
 ## 2.5 Scoring Components
 
 ![[LAMPE-scoring-components-en.drawio.svg]]
-
-Editable source: [[LAMPE-scoring-components-en.drawio]]
 
 | ID | Name | Priority | Traceability | Risk control measure? | SOUP? | Dependencies |
 |---|---|---|---|---|---|---|
@@ -224,8 +214,6 @@ Persists and indexes contents passed to the database by SCO_AKI and makes them a
 ## 2.6 Backend Components
 
 ![[LAMPE-backend-components-en.drawio.svg]]
-
-Editable source: [[LAMPE-backend-components-en.drawio]]
 
 | ID | Name | Priority | Traceability | Risk control measure? | SOUP? | Dependencies |
 |---|---|---|---|---|---|---|
@@ -287,8 +275,6 @@ Receives an order from BACK_MAIL to send a predefined email. The email is forwar
 
 ![[LAMPE-frontend-component-en.drawio.svg]]
 
-Editable source: [[LAMPE-frontend-component-en.drawio]]
-
 | ID | Name | Priority | Traceability | Risk control measure? | SOUP? | Dependencies |
 |---|---|---|---|---|---|---|
 | FRONT_CASE | Case dashboard component | Medium | SyA_ES_HS_VM; SyA_BU_INST_DOCKER; SyA_NFA_SA_SAND; SyA_NFA_SA_CONT; SyA_ES_SS_PC; SyA_ES_HS_PC; SyA_ES_NS_UI; SyA_FA_UI_STAMM; SyA_FA_UI_FB; SyA_FA_UI_START; SyA_FA_UI_DETAIL; SyA_FA_UI_HINWEIS; SyA_FA_UI_DATEN; SyA_FA_UI_LINK; SyA_NFA_SA_AUI; SyA_NFA_SQ_SUI; SyA_NFA_SQ_MINI; SyA_NFA_SQ_UEB; PHA_PD_R001.1; PHA_PD_R002.1; PHA_PD_R003.1; PHA_PD_R004.1; PHA_PD_R005.1; FMEA_PD_R002.1; [[algorithm-aki]] | Yes | Yes, SOUP_FAKER, SOUP_LUCIDE_REACT, SOUP_REACT_ROUTER, SOUP_REACT_DOM, SOUP_RECHARTS, SOUP_ZOD | BACK_SER |
@@ -297,13 +283,9 @@ Reproduces the contents of the result DB for a selected medical case in detailed
 
 ![[LAMPE-case-dashboard-overview-en.drawio.svg]]
 
-Editable source: [[LAMPE-case-dashboard-overview-en.drawio]]
-
 Clicking a status tile in "critical states" or "warning states" opens the detail page for the selected scoring algorithm.
 
 ![[LAMPE-case-dashboard-detail-en.drawio.svg]]
-
-Editable source: [[LAMPE-case-dashboard-detail-en.drawio]]
 
 Notification history, including measurement time, laboratory analyte, measured value, and calculated CDSS status, is visible as a table or as a chart after clicking. If CDSS data and/or patient master data are missing, a corresponding error page is displayed.
 
