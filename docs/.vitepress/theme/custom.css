@@ -110,6 +110,12 @@
   border-bottom: 0 !important;
 }
 
+/* Keep article content behind the fixed navigation while scrolling. */
+.VPNavBar {
+  z-index: 30;
+  background-color: var(--vp-c-bg) !important;
+}
+
 .VPNavBar .divider,
 .VPNavBar .divider-line {
   display: none !important;
@@ -254,6 +260,12 @@ html .home-background .ampel-footer__ampel-logo--light {
   border: 0;
 }
 
+
+/* Keep footer links above the fixed article outline and its empty spacer. */
+.ampel-footer {
+  position: relative;
+  z-index: var(--vp-z-index-footer);
+}
 
 .ampel-footer__inner {
   display: flex;
