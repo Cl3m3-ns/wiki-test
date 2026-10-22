@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Editable source: LAMPE-data-source-component-en.drawio -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200px" height="360px" viewBox="0 0 1200 360" role="img" aria-labelledby="title description" content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2026-07-30T00:00:00.000Z&quot; agent=&quot;Codex&quot; version=&quot;24.7.17&quot; type=&quot;device&quot;&gt;
+&lt;diagram id=&quot;LAMPE-data-source-component-en&quot; name=&quot;LAMPE Data Source Component&quot;&gt;
+&lt;mxGraphModel dx=&quot;1200&quot; dy=&quot;360&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;1200&quot; pageHeight=&quot;360&quot; math=&quot;0&quot; shadow=&quot;0&quot; background=&quot;#f4f4f5&quot;&gt;
+&lt;root&gt;
+&lt;mxCell id=&quot;0&quot; /&gt;
+&lt;mxCell id=&quot;1&quot; parent=&quot;0&quot; /&gt;
+&lt;mxCell id=&quot;dq-region&quot; value=&quot;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2a8;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;760&quot; y=&quot;35&quot; width=&quot;410&quot; height=&quot;290&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;mxCell id=&quot;dq-region-label&quot; value=&quot;DQ_CDC&quot; style=&quot;text;html=1;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#2f343b;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;whiteSpace=wrap;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;778&quot; y=&quot;45&quot; width=&quot;374&quot; height=&quot;24&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;mxCell id=&quot;replication&quot; value=&quot;&quot; style=&quot;edgeStyle=none;rounded=1;html=1;strokeColor=#454b52;strokeWidth=1.6;dashed=0;startArrow=none;endArrow=block;endFill=1;endSize=8&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;source-db&quot; target=&quot;ampel-db&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;mxCell id=&quot;cdc-input&quot; value=&quot;&quot; style=&quot;edgeStyle=none;rounded=1;html=1;strokeColor=#454b52;strokeWidth=1.6;dashed=0;startArrow=none;endArrow=block;endFill=1;endSize=8&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;ampel-db&quot; target=&quot;cdc&quot;&gt;&lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;mxCell id=&quot;source-db&quot; value=&quot;Source-system replication&amp;lt;br&amp;gt;to local source database&quot; style=&quot;rounded=1;arcSize=12;fillColor=#eceef0;strokeColor=none;shadow=1;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#2f343b;fontSize=22;align=center;verticalAlign=middle;spacingTop=8;spacingLeft=8;spacingRight=8;spacingBottom=8&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;40&quot; y=&quot;130&quot; width=&quot;250&quot; height=&quot;95&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;mxCell id=&quot;ampel-db&quot; value=&quot;Source-data replication&amp;lt;br&amp;gt;to AMPEL DB&quot; style=&quot;rounded=1;arcSize=12;fillColor=#eceef0;strokeColor=none;shadow=1;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#2f343b;fontSize=22;align=center;verticalAlign=middle;spacingTop=8;spacingLeft=8;spacingRight=8;spacingBottom=8&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;380&quot; y=&quot;115&quot; width=&quot;300&quot; height=&quot;125&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;mxCell id=&quot;cdc&quot; value=&quot;CDC Monitoring&amp;lt;br&amp;gt;Component&amp;lt;br&amp;gt;(SOUP | Debezium)&quot; style=&quot;rounded=1;arcSize=10;fillColor=#fff8cc;strokeColor=#8a7626;strokeWidth=1.5;shadow=1;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#2f343b;fontSize=24;align=center;verticalAlign=middle;spacingTop=8;spacingLeft=8;spacingRight=8;spacingBottom=8&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;795&quot; y=&quot;85&quot; width=&quot;340&quot; height=&quot;190&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;/root&gt;
+&lt;/mxGraphModel&gt;
+&lt;/diagram&gt;
+&lt;/mxfile&gt;">
+<title id="title">LAMPE Data Source Component</title>
+<desc id="description">English editable draw.io reconstruction for LAMPE Data Source Component.</desc>
+<defs>
+<filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.14"/></filter>
+<marker id="arrowEnd" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 4 L 0 8 z" fill="#454b52"/></marker>
+<marker id="arrowStart" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M 10 0 L 0 4 L 10 8 z" fill="#454b52"/></marker>
+</defs>
+<rect x="0" y="0" width="1200" height="360" fill="#f4f4f5" />
+<rect x="760" y="35" width="410" height="290" fill="#fff2a8" stroke="none" />
+<text x="778" y="58" text-anchor="start" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#2f343b"><tspan x="778" dy="0">DQ_CDC</tspan></text>
+<polyline points="290,178 380,178" fill="none" stroke="#454b52" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowEnd)" />
+<polyline points="680,178 795,178" fill="none" stroke="#454b52" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowEnd)" />
+<rect x="40" y="130" width="250" height="95" rx="14" fill="#eceef0" stroke="none" filter="url(#softShadow)" /><text x="165" y="164.52" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#2f343b"><tspan x="165" dy="0">Source-system replication</tspan><tspan x="165" dy="25.959999999999997">to local source database</tspan></text>
+<rect x="380" y="115" width="300" height="125" rx="14" fill="#eceef0" stroke="none" filter="url(#softShadow)" /><text x="530" y="164.52" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#2f343b"><tspan x="530" dy="0">Source-data replication</tspan><tspan x="530" dy="25.959999999999997">to AMPEL DB</tspan></text>
+<rect x="795" y="85" width="340" height="190" rx="14" fill="#fff8cc" stroke="#8a7626" stroke-width="1.6" filter="url(#softShadow)" /><text x="965" y="151.68" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500" fill="#2f343b"><tspan x="965" dy="0">CDC Monitoring</tspan><tspan x="965" dy="28.32">Component</tspan><tspan x="965" dy="28.32">(SOUP | Debezium)</tspan></text>
+</svg>

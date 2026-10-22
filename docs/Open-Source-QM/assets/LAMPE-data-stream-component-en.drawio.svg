@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Editable source: LAMPE-data-stream-component-en.drawio -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600px" height="480px" viewBox="0 0 600 480" role="img" aria-labelledby="title description" content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2026-07-30T00:00:00.000Z&quot; agent=&quot;Codex&quot; version=&quot;24.7.17&quot; type=&quot;device&quot;&gt;
+&lt;diagram id=&quot;LAMPE-data-stream-component-en&quot; name=&quot;LAMPE Data Stream Component&quot;&gt;
+&lt;mxGraphModel dx=&quot;600&quot; dy=&quot;480&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;600&quot; pageHeight=&quot;480&quot; math=&quot;0&quot; shadow=&quot;0&quot; background=&quot;#f4f4f5&quot;&gt;
+&lt;root&gt;
+&lt;mxCell id=&quot;0&quot; /&gt;
+&lt;mxCell id=&quot;1&quot; parent=&quot;0&quot; /&gt;
+&lt;mxCell id=&quot;stream-region&quot; value=&quot;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=#ff9f4a;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;20&quot; y=&quot;20&quot; width=&quot;560&quot; height=&quot;440&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;mxCell id=&quot;stream-region-label&quot; value=&quot;DS_STREAM&quot; style=&quot;text;html=1;strokeColor=none;fillColor=none;fontFamily=Arial;fontColor=#2f343b;fontSize=14;fontStyle=1;align=left;verticalAlign=middle;whiteSpace=wrap;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;38&quot; y=&quot;30&quot; width=&quot;524&quot; height=&quot;24&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;mxCell id=&quot;streaming&quot; value=&quot;Streaming Component&amp;lt;br&amp;gt;(SOUP | Apache Kafka)&quot; style=&quot;rounded=1;arcSize=10;fillColor=#ffb46f;strokeColor=#8f4e19;strokeWidth=1.5;shadow=1;whiteSpace=wrap;html=1;fontFamily=Arial;fontColor=#2f343b;fontSize=30;align=center;verticalAlign=middle;spacingTop=8;spacingLeft=8;spacingRight=8;spacingBottom=8&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&lt;mxGeometry x=&quot;90&quot; y=&quot;105&quot; width=&quot;420&quot; height=&quot;270&quot; as=&quot;geometry&quot; /&gt;&lt;/mxCell&gt;
+&lt;/root&gt;
+&lt;/mxGraphModel&gt;
+&lt;/diagram&gt;
+&lt;/mxfile&gt;">
+<title id="title">LAMPE Data Stream Component</title>
+<desc id="description">English editable draw.io reconstruction for LAMPE Data Stream Component.</desc>
+<defs>
+<filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.14"/></filter>
+<marker id="arrowEnd" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 4 L 0 8 z" fill="#454b52"/></marker>
+<marker id="arrowStart" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M 10 0 L 0 4 L 10 8 z" fill="#454b52"/></marker>
+</defs>
+<rect x="0" y="0" width="600" height="480" fill="#f4f4f5" />
+<rect x="20" y="20" width="560" height="440" fill="#ff9f4a" stroke="none" />
+<text x="38" y="43" text-anchor="start" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#2f343b"><tspan x="38" dy="0">DS_STREAM</tspan></text>
+<rect x="90" y="105" width="420" height="270" rx="14" fill="#ffb46f" stroke="#8f4e19" stroke-width="1.6" filter="url(#softShadow)" /><text x="300" y="222.3" text-anchor="middle" dominant-baseline="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="500" fill="#2f343b"><tspan x="300" dy="0">Streaming Component</tspan><tspan x="300" dy="35.4">(SOUP | Apache Kafka)</tspan></text>
+</svg>
