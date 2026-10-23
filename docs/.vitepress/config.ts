@@ -90,10 +90,10 @@ export default defineConfig({
       md.use(wikiLinks);
     },
   },
-  lang: "de-DE",
+  lang: "en-US",
   title: "AMPEL Wiki",
   titleTemplate: ":title | AMPEL Wiki",
-  description: "Statischer Markdown-Implementationsleitfaden für das AMPEL-Projekt",
+  description: "A guide for healthcare institutions implementing and operating AMPEL as an in-house solution.",
   base,
   cleanUrls: false,
   lastUpdated: true,
@@ -108,20 +108,20 @@ export default defineConfig({
     ],
     ["link", { rel: "icon", type: "image/svg+xml", href: `${base}assets/images/ampel-wave.svg` }],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:locale", content: "de_DE" }],
+    ["meta", { property: "og:locale", content: "en_US" }],
     ["meta", { property: "og:site_name", content: "AMPEL Wiki" }],
-    ["meta", { property: "og:title", content: "AMPEL Wiki – Implementationsleitfaden" }],
-    ["meta", { property: "og:description", content: "Bauanleitung und Evidenzsammlung für das AMPEL-Projekt" }],
+    ["meta", { property: "og:title", content: "AMPEL Wiki – Implementation Guide" }],
+    ["meta", { property: "og:description", content: "An implementation guide and evidence base for the AMPEL project" }],
     ["meta", { property: "og:url", content: canonicalUrl }],
     ["meta", { name: "twitter:card", content: "summary" }],
-    ["meta", { name: "twitter:title", content: "AMPEL Wiki – Implementationsleitfaden" }],
-    ["meta", { name: "twitter:description", content: "Bauanleitung und Evidenzsammlung für das AMPEL-Projekt" }],
+    ["meta", { name: "twitter:title", content: "AMPEL Wiki – Implementation Guide" }],
+    ["meta", { name: "twitter:description", content: "An implementation guide and evidence base for the AMPEL project" }],
   ],
   themeConfig: {
     logo: {
       light: "/assets/images/brand-default-logo.svg",
       dark: "/assets/images/brand-default-logo-dark.svg",
-      alt: "AMPEL-Welle",
+      alt: "AMPEL logo",
     },
     siteTitle: false,
     nav: [
@@ -129,15 +129,15 @@ export default defineConfig({
       {
         text: `v${version}`,
         items: [
-          { text: "Änderungsverlauf", link: "https://github.com/Cl3m3-ns/wiki-test/commits/main/" },
-          { text: "Entwicklung", link: "https://github.com/Cl3m3-ns/wiki-test/tree/main/" },
+          { text: "Changelog", link: "https://github.com/Cl3m3-ns/wiki-test/commits/main/" },
+          { text: "Source code", link: "https://github.com/Cl3m3-ns/wiki-test/tree/main/" },
         ],
       },
     ],
     sidebar: [
-      { text: "Start und Übersicht", link: "0-start-und-uebersicht.md" },
+      { text: "Start and overview", link: "0-start-und-uebersicht.md" },
       {
-        text: "Technische Bauanleitung",
+        text: "Technical implementation guide",
         link: "/1-bauanleitung",
         collapsed: false,
         items: [
@@ -156,7 +156,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "Regulatische Bauanleitung",
+        text: "Regulatory implementation guide",
         link: "/Open-Source-BA/overview.md",
         collapsed: true,
         items: [
@@ -172,17 +172,17 @@ export default defineConfig({
         ],
       },
       {
-        text: "Evidenz",
+        text: "Evidence",
         link: "/3-beispiel-neues-kapitel",
         collapsed: true,
         items: [
                    {
-            text: "2.1 Medizinisch-wissenschaftliche Dokumentation",
+            text: "2.1 Medical and scientific documentation",
             link: "/2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation",
             collapsed: true,
          items: [
-              { text: "2.1.1 Algorithmen", link: "/2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation/2-1-1-algorithmen" },
-              { text: "2.1.2 Sonstige Studienergebnisse", link: "/2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation/2-1-2-sonstige-studienergebnisse" },
+              { text: "2.1.1 Algorithms", link: "/2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation/2-1-1-algorithmen" },
+              { text: "2.1.2 Other study results", link: "/2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation/2-1-2-sonstige-studienergebnisse" },
             ],
           },
         ],
@@ -193,16 +193,16 @@ export default defineConfig({
       options: {
         translations: {
           button: {
-            buttonText: "Suchen",
-            buttonAriaLabel: "Wiki durchsuchen",
+            buttonText: "Search",
+            buttonAriaLabel: "Search the wiki",
           },
           modal: {
-            noResultsText: "Keine Ergebnisse gefunden für",
-            resetButtonTitle: "Suche zurücksetzen",
+            noResultsText: "No results for",
+            resetButtonTitle: "Reset search",
             footer: {
-              selectText: "Auswählen",
-              navigateText: "Navigieren",
-              closeText: "Schließen",
+              selectText: "Select",
+              navigateText: "Navigate",
+              closeText: "Close",
             },
           },
         },
@@ -210,29 +210,29 @@ export default defineConfig({
     },
     outline: {
       level: [2, 3],
-      label: "Auf dieser Seite",
+      label: "On this page",
     },
     editLink: {
       pattern: "https://github.com/Cl3m3-ns/wiki-test/edit/main/docs/:path",
-      text: "Diese Seite auf GitHub bearbeiten",
+    text: "Edit this page on GitHub",
     },
     lastUpdated: {
-      text: "Zuletzt aktualisiert",
+      text: "Last updated",
       formatOptions: {
         dateStyle: "medium",
       },
     },
     docFooter: {
-      prev: "Vorherige Seite",
-      next: "Nächste Seite",
+      prev: "Previous page",
+      next: "Next page",
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/Cl3m3-ns/wiki-test" },
     ],
-    sidebarMenuLabel: "Menü",
-    returnToTopLabel: "Nach oben",
-    darkModeSwitchLabel: "Darstellung",
-    lightModeSwitchTitle: "Helles Design verwenden",
-    darkModeSwitchTitle: "Dunkles Design verwenden",
+    sidebarMenuLabel: "Sidebar menu",
+    returnToTopLabel: "Return to top",
+    darkModeSwitchLabel: "Appearance",
+    lightModeSwitchTitle: "Use light theme",
+    darkModeSwitchTitle: "Use dark theme",
   },
 });

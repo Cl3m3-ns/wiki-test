@@ -6,30 +6,30 @@ title: AMPEL WIKI
 hero:
   name: "AMPEL Wiki"
   text: ""
-  tagline: "Bauanleitung und Evidenzsammlung für die Entwicklung und Bewertung klinischer Entscheidungsunterstützung."
+  tagline: "A practical guide and evidence base for developing and evaluating clinical decision support."
   image:
     light: /assets/images/brand-default-logo.svg
     dark: /assets/images/brand-default-logo.svg
     alt: AMPEL Wiki
   actions:
     - theme: brand
-      text: Start und Übersicht
+      text: Start here
       link: /0-start-und-uebersicht
     - theme: alt
-      text: Auf GitHub ansehen
+      text: View on GitHub
       link: https://github.com/Cl3m3-ns/wiki-test
 
 features:
-  - title: "Technische Bauanleitung"
-    details: "Architektur, Module, Schnittstellen und Installation für die technische Umsetzung."
+  - title: "Technical implementation guide"
+    details: "Architecture, modules, interfaces, and installation for technical implementation."
     link: /1-bauanleitung
-    linkText: Zur Bauanleitung
-  - title: "Regulatorische Bauanleitung"
-    details: "Anforderungen zu Medizinprodukten, Eigenherstellung, klinischen Prüfungen und Datenschutz."
+    linkText: Technical manual
+  - title: "Regulatory implementation guide"
+    details: "Requirements for medical devices, in-house production, clinical investigations, and data protection."
     link: /Open-Source-BA/overview.md
-    linkText: Zur Regulatorik
-  - title: "Evidenz"
-    details: "Für die medizinisch-wissenschaftliche Dokumentation, Algorithmen und Studienergebnisse."
+    linkText: Regulatory manual
+  - title: "Evidence"
+    details: "Medical and scientific documentation, algorithms, and study results."
     link: /2-evidenzsammlung
-    linkText: Zur Evidenz
+    linkText: Evidence section
 ---

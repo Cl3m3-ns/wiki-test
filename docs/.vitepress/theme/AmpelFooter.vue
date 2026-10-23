@@ -13,7 +13,7 @@ const { hasSidebar } = useSidebar();
           href="https://www.uniklinikum-leipzig.de/einrichtungen/ampel"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="AMPEL-Projektseite des Universitätsklinikums Leipzig"
+          aria-label="AMPEL project page of University Hospital Leipzig"
         >
           <img
             class="ampel-footer__ampel-logo ampel-footer__ampel-logo--light"
@@ -28,9 +28,9 @@ const { hasSidebar } = useSidebar();
           />
         </a>
       </div>
-      <nav class="ampel-footer__legal" aria-label="Rechtliche Hinweise">
-        <a :href="withBase('/impressum.html')">Impressum</a>
-        <a :href="withBase('/datenschutz.html')">Datenschutz</a>
+      <nav class="ampel-footer__legal" aria-label="Legal information">
+        <a :href="withBase('/impressum.html')">Legal notice</a>
+        <a :href="withBase('/datenschutz.html')">Privacy policy</a>
       </nav>
     </div>
   </footer>

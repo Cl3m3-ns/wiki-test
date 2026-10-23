@@ -1,57 +1,58 @@
-# Impressum
+# Legal notice
 
-## Angaben gemäß § 18 Abs. 2 MStV
+## Information pursuant to Section 18 (2) MStV
 
-**Universitätsklinikum Leipzig**  
-Anstalt öffentlichen Rechts  
-Liebigstraße 18, Haus B  
-04103 Leipzig
+**University Hospital Leipzig**  
+Public-law institution  
+Liebigstraße 18, Building B  
+04103 Leipzig, Germany
 
-Telefon: [+49 341 97 109](tel:+4934197109)  
+Phone: [+49 341 97 109](tel:+4934197109)  
 Fax: +49 341 97 15909
 
-**Vertretungsberechtigter Vorstand**
+**Board authorised to represent the institution**
 
-- Prof. Dr. med. Christoph Josten, Medizinischer Vorstand und Sprecher des Vorstandes
-- Dr. Robert Jacob, Kaufmännischer Vorstand
+- Prof. Dr. med. Christoph Josten, Medical Director and Chair of the Board
+- Dr. Robert Jacob, Commercial Director
 
-Umsatzsteuer-Identifikationsnummer: DE 213218064
+VAT identification number: DE 213218064
 
-## Zuständige Aufsichtsbehörde
+## Competent supervisory authority
 
-Sächsisches Staatsministerium für Wissenschaft, Kultur und Tourismus  
+Saxon State Ministry for Science, Culture and Tourism  
 Wigardstraße 17  
-01097 Dresden
+01097 Dresden, Germany
 
 [www.smwk.sachsen.de](https://www.smwk.sachsen.de/)
 
-## Verantwortlich für den Inhalt
+## Responsible for the content
 
 **Dr. Daniel Steinbach**  
-Leitung der KI-Entwicklung in der Abteilung für Medizinische KI und Translation (MedKIT)  
+Head of AI Development in the Department of Medical AI and Translation (MedKIT)  
 Deutscher Platz 5a  
-04103 Leipzig
+04103 Leipzig, Germany
 
-Telefon: [+49 341 97 11343](tel:+493419711343)
+Phone: [+49 341 97 11343](tel:+493419711343)
 
-## Hinweise zu den Inhalten
+## Content disclaimer
 
-Die Inhalte des AMPEL Wikis werden sorgfältig und nach bestem Wissen zusammengestellt. Trotzdem kann keine Gewähr dafür übernommen werden, dass sämtliche Angaben jederzeit richtig, vollständig und aktuell sind. Medizinisches Wissen entwickelt sich durch Forschung und klinische Erfahrung fortlaufend weiter. Die bereitgestellten Informationen ersetzen insbesondere keine persönliche Untersuchung, Diagnose oder Behandlung durch qualifiziertes medizinisches Fachpersonal.
+The content of the AMPEL Wiki has been compiled carefully and to the best of our knowledge. Nevertheless, no guarantee can be given that all information is correct, complete, or up to date at all times. Medical knowledge is continuously evolving through research and clinical experience. In particular, the information provided does not replace an examination, diagnosis, or treatment by qualified medical professionals.
 
-Die Nutzung der Inhalte erfolgt auf eigene Verantwortung. Eine Haftung für unmittelbare oder mittelbare materielle oder immaterielle Schäden ist ausgeschlossen, soweit nicht Vorsatz, grobe Fahrlässigkeit oder eine schuldhafte Verletzung von Leben, Körper oder Gesundheit vorliegt. Inhalte können jederzeit ohne vorherige Ankündigung geändert, ergänzt oder entfernt werden; auch eine zeitweise oder endgültige Einstellung des Angebots bleibt vorbehalten.
+Use of the content is at your own risk. Liability for direct or indirect material or immaterial damage is excluded, except in cases of intent, gross negligence, or culpable injury to life, body, or health. Content may be changed, supplemented, or removed at any time without prior notice; the service may also be temporarily or permanently discontinued.
 
-## Externe Links
+## External links
 
-Dieses Wiki verweist auf Internetangebote Dritter. Auf deren Gestaltung und Inhalte hat das Universitätsklinikum Leipzig keinen Einfluss. Für diese Angebote sind ausschließlich deren jeweilige Betreiber verantwortlich. Bitte informieren Sie uns unter [ampel@uniklinik-leipzig.de](mailto:ampel@uniklinik-leipzig.de), wenn ein verlinktes Angebot Anlass zu Beanstandungen gibt.
+This wiki links to websites operated by third parties. University Hospital Leipzig has no influence over their design or content. The respective operators are solely responsible for those websites. Please inform us at [ampel@uniklinik-leipzig.de](mailto:ampel@uniklinik-leipzig.de) if a linked website gives rise to a complaint.
 
-## Urheber- und Kennzeichenrecht
+## Copyright and trademark law
 
-Die vom Universitätsklinikum Leipzig erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Eine Nutzung außerhalb der gesetzlichen Schranken bedarf der vorherigen Zustimmung der jeweiligen Rechteinhaber. Rechte Dritter werden beachtet und entsprechende Inhalte nach Möglichkeit gekennzeichnet. Hinweise auf mögliche Rechtsverletzungen richten Sie bitte an die unten genannte Kontaktadresse.
+The content and works created by University Hospital Leipzig are subject to German copyright law. Any use beyond the limits permitted by law requires the consent of the respective rights holders. Third-party rights are respected and, where possible, corresponding content is identified. Please send notices of possible infringements to the contact address below.
 
-Alle genannten Marken und Warenzeichen unterliegen den Rechten ihrer jeweiligen Inhaber. Aus ihrer bloßen Nennung folgt nicht, dass sie frei von Rechten Dritter sind.
+All trademarks and trade names mentioned are subject to the rights of their respective owners. Their mere mention does not imply that they are free from third-party rights.
 
-## Hinweise und Korrekturen
+## Notices and corrections
 
-Inhaltliche und technische Hinweise senden Sie bitte an [ampel@uniklinik-leipzig.de](mailto:ampel@uniklinik-leipzig.de).
+Please send content-related and technical notices to [ampel@uniklinik-leipzig.de](mailto:ampel@uniklinik-leipzig.de).
 
-Die Angaben wurden für das AMPEL Wiki auf Grundlage des [Impressums des CDS Network](https://cds-network.eu/impressum/) aufbereitet.
+This legal notice was prepared for the AMPEL Wiki on the basis of the [CDS Network legal notice](https://cds-network.eu/impressum/).
+

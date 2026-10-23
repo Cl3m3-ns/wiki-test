@@ -19,13 +19,13 @@
 }
 
 .home-background {
-  /* leichtes Overlay für die Lesbarkeit */
+  /* Subtle overlay for readability. */
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.35)
     );
-/* Navigation oben über dem Bild transparent */
+/* Transparent navigation above the background image. */
   --vp-nav-home-bg-color: transparent;
   background-image: url('../../public/assets/images/AMPEL-Hintergrund3.jpg');
   background-size: cover;
