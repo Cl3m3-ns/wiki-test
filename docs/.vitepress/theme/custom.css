@@ -292,10 +292,18 @@ html .home-background .ampel-footer__ampel-logo--light {
   display: block !important;
 }
 
+@media (max-width: 959px) {
+  .home-background .VPHomeHero .heading {
+    display: none;
+  }
+}
+
 .VPHomeHero .image-src {
-  max-width: 280px;
-  max-height: 180px;
-  padding: 22px;
+  width: 500px;
+  height: auto;
+  max-width: 90vw;
+  max-height: none;
+  padding-bottom: 55px;
 }
 
 .dark .VPNavBarTitle .logo,
