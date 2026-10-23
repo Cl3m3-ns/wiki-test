@@ -1,9 +1,9 @@
-# 1.5.3 Schnittstellen
+# 1.5.3 Interfaces
 
-Beschreibung der Schnittstellen zu Quell- und Zielsystemen.
+Descriptions of the interfaces to source and target systems.
 
-## Inhalte
+## Contents
 
-- Datenquellen
-- Protokolle und Formate
-- Authentifizierung
+- Data sources
+- Protocols and formats
+- Authentication

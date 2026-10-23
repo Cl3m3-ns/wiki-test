@@ -1,7 +1,7 @@
-# 2 Evidenzsammlung
+# 2 Evidence collection
 
-Sammlung der wissenschaftlichen Evidenz zum Projekt. Das Inhaltsverzeichnis befindet sich noch in Arbeit (work in progress).
+A collection of scientific evidence for the project. The table of contents is still a work in progress.
 
-## Unterkapitel
+## Subchapters
 
-- [2.1 Medizinisch-wissenschaftliche Dokumentation](2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation.md)
+- [2.1 Medical and scientific documentation](2-evidenzsammlung/2-1-medizinisch-wissenschaftliche-dokumentation.md)

@@ -1,9 +1,9 @@
-# 1.5.6 Schulungsmaterial für Anwender
+# 1.5.6 User training materials
 
-Material zur Schulung der Anwenderinnen und Anwender.
+Materials for training users.
 
-## Inhalte
+## Contents
 
-- Schulungskonzept
-- Handreichungen
-- Übungen
+- Training plan
+- Handouts
+- Exercises

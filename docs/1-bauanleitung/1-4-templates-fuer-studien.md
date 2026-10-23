@@ -1,11 +1,11 @@
-# 1.4 Templates für Studien
+# 1.4 Study templates
 
-Vorlagen und Bausteine für die Planung und Durchführung von Studien.
+Templates and resources for planning and conducting studies.
 
-## Unterkapitel
+## Subchapters
 
 - [1.4.1 RCT / PCT](1-4-templates-fuer-studien/1-4-1-rct-pct.md)
-- [1.4.2 Studien als QM-Maßnahme](1-4-templates-fuer-studien/1-4-2-studien-als-qm-massnahme.md)
-- [1.4.3 Retrospektiv](1-4-templates-fuer-studien/1-4-3-retrospektiv.md)
-- [1.4.4 Endpunkte und Datenerhebung](1-4-templates-fuer-studien/1-4-4-endpunkte-und-datenerhebung.md)
-- [1.4.5 Praktisches Design](1-4-templates-fuer-studien/1-4-5-praktisches-design.md)
+- [1.4.2 Studies as a quality management measure](1-4-templates-fuer-studien/1-4-2-studien-als-qm-massnahme.md)
+- [1.4.3 Retrospective studies](1-4-templates-fuer-studien/1-4-3-retrospektiv.md)
+- [1.4.4 Endpoints and data collection](1-4-templates-fuer-studien/1-4-4-endpunkte-und-datenerhebung.md)
+- [1.4.5 Practical study design](1-4-templates-fuer-studien/1-4-5-praktisches-design.md)

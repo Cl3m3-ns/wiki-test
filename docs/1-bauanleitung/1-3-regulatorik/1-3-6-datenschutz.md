@@ -1,9 +1,9 @@
-# 1.3.6 Datenschutz
+# 1.3.6 Data protection
 
-Datenschutzrechtliche Grundlagen nach DSGVO und Landesrecht.
+Data protection principles under the GDPR and state law.
 
-## Inhalte
+## Contents
 
-- Rechtsgrundlagen der Verarbeitung
-- Datenschutz-Folgenabschätzung
-- Technische und organisatorische Maßnahmen
+- Legal bases for processing
+- Data protection impact assessment
+- Technical and organizational measures

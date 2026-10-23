@@ -1,9 +1,9 @@
-# 1.5.2 Module
+# 1.5.2 Modules
 
-Beschreibung der einzelnen Module und ihrer Aufgaben.
+Descriptions of the individual modules and their functions.
 
-## Inhalte
+## Contents
 
-- Modulübersicht
-- Verantwortlichkeiten je Modul
-- Abhängigkeiten
+- Module overview
+- Responsibilities of each module
+- Dependencies

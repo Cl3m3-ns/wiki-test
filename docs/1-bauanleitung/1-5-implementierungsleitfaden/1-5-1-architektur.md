@@ -1,9 +1,9 @@
-# 1.5.1 Architektur
+# 1.5.1 Architecture
 
-Überblick über die System- und Softwarearchitektur.
+An overview of the system and software architecture.
 
-## Inhalte
+## Contents
 
-- Komponentenüberblick
-- Datenflüsse
-- Betriebsumgebung
+- Component overview
+- Data flows
+- Operating environment

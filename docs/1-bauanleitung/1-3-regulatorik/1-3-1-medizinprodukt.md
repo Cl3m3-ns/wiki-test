@@ -1,9 +1,9 @@
-# 1.3.1 Medizinprodukt
+# 1.3.1 Medical devices
 
-Einordnung als Medizinprodukt nach MDR und die zugehörige Klassifizierung.
+Determining whether a product is a medical device under the MDR and its corresponding classification.
 
-## Inhalte
+## Contents
 
-- Zweckbestimmung
-- Klassifizierung
-- Konformitätsbewertung
+- Intended purpose
+- Classification
+- Conformity assessment

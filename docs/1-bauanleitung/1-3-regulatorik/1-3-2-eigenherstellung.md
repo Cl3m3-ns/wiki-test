@@ -1,9 +1,9 @@
-# 1.3.2 Eigenherstellung
+# 1.3.2 In-house production
 
-Anforderungen an die Eigenherstellung (In-house) nach Artikel 5 (5) MDR.
+Requirements for in-house production under Article 5 (5) MDR.
 
-## Inhalte
+## Contents
 
-- Voraussetzungen der Eigenherstellung
-- Erklärung und Dokumentation
-- Abgrenzung zur Inverkehrbringung
+- Conditions for in-house production
+- Declaration and documentation
+- Distinction from placing a device on the market

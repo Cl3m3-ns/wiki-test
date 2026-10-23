@@ -1,9 +1,9 @@
 # 1.4.1 RCT / PCT
 
-Template für randomisierte kontrollierte Studien (RCT) und pragmatische klinische Studien (PCT).
+Template for randomized controlled trials (RCTs) and pragmatic clinical trials (PCTs).
 
-## Inhalte
+## Contents
 
-- Fragestellung und Hypothesen
-- Randomisierung und Verblindung
-- Fallzahlplanung
+- Research question and hypotheses
+- Randomization and blinding
+- Sample size planning

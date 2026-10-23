@@ -1,9 +1,9 @@
-# 1.4.2 Studien als QM-Maßnahme
+# 1.4.2 Studies as a quality management measure
 
-Template für Studien, die als Maßnahme des Qualitätsmanagements durchgeführt werden.
+Template for studies conducted as a quality management measure.
 
-## Inhalte
+## Contents
 
-- Abgrenzung zur klinischen Prüfung
-- Ziele der QM-Maßnahme
-- Auswertung und Berichterstattung
+- Distinction from clinical investigations
+- Objectives of the quality management measure
+- Analysis and reporting

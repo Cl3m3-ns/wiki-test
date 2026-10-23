@@ -1,9 +1,9 @@
-# 2.1.1 Algorithmen (für Wissenschaftler)
+# 2.1.1 Algorithms (for researchers)
 
-Wissenschaftliche Beschreibung der eingesetzten Algorithmen.
+Scientific descriptions of the algorithms used.
 
-## Inhalte
+## Contents
 
-- Methodik
-- Eingangsgrößen und Schwellenwerte
-- Validierung
+- Methodology
+- Input variables and thresholds
+- Validation

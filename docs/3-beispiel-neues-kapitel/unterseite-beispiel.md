@@ -1,9 +1,9 @@
-# Unterseite Beispiel
+# Example subpage
 
-Auch Unterseiten benötigen nur eine H1-Überschrift und normalen Markdown-Inhalt. Die Zuordnung zum übergeordneten Kapitel erfolgt in der zentralen VitePress-Navigation.
+Subpages also need only an H1 heading and standard Markdown content. They are assigned to their parent chapter in the central VitePress navigation.
 
 ```md
-# Unterseite Beispiel
+# Example subpage
 
-Hier beginnt der Inhalt der Unterseite.
+The subpage content starts here.
 ```

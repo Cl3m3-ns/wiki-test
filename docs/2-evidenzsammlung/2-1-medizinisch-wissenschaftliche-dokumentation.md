@@ -1,8 +1,8 @@
-# 2.1 Medizinisch-wissenschaftliche Dokumentation
+# 2.1 Medical and scientific documentation
 
-Medizinisch-wissenschaftliche Grundlagen, Algorithmen und Studienergebnisse.
+Medical and scientific foundations, algorithms, and study results.
 
-## Unterkapitel
+## Subchapters
 
-- [2.1.1 Algorithmen (für Wissenschaftler)](2-1-medizinisch-wissenschaftliche-dokumentation/2-1-1-algorithmen.md)
-- [2.1.2 Sonstige Studienergebnisse](2-1-medizinisch-wissenschaftliche-dokumentation/2-1-2-sonstige-studienergebnisse.md)
+- [2.1.1 Algorithms (for researchers)](2-1-medizinisch-wissenschaftliche-dokumentation/2-1-1-algorithmen.md)
+- [2.1.2 Other study results](2-1-medizinisch-wissenschaftliche-dokumentation/2-1-2-sonstige-studienergebnisse.md)

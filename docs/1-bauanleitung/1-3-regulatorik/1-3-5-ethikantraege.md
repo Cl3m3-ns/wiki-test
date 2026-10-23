@@ -1,9 +1,9 @@
-# 1.3.5 Ethikanträge
+# 1.3.5 Ethics applications
 
-Vorgehen und Unterlagen für Anträge bei der Ethikkommission.
+Procedures and documentation for applications to the ethics committee.
 
-## Inhalte
+## Contents
 
-- Antragsunterlagen
-- Votum und Auflagen
-- Änderungsanzeigen
+- Application documents
+- Ethics opinions and conditions
+- Amendment notifications

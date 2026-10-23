@@ -1,9 +1,9 @@
-# 1.4.4 Endpunkte und Datenerhebung
+# 1.4.4 Endpoints and data collection
 
-Definition der Endpunkte und Festlegung der Datenerhebung.
+Defining endpoints and planning data collection.
 
-## Inhalte
+## Contents
 
-- Primäre und sekundäre Endpunkte
-- Erhebungsinstrumente
-- Datenqualität und Vollständigkeit
+- Primary and secondary endpoints
+- Data collection instruments
+- Data quality and completeness

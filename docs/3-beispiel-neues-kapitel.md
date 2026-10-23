@@ -1,18 +1,18 @@
-# 3 Beispiel neues Kapitel
+# 3 Example new chapter
 
-Dieses Beispiel zeigt, wie ein neues Kapitel ohne YAML-Kopfzeile angelegt wird. Der Seitentitel stammt aus der H1-Überschrift; Position und Unterseiten werden zentral in `.vitepress/config.ts` eingetragen.
+This example shows how to create a new chapter without YAML frontmatter. The page title comes from the H1 heading; its position and subpages are configured centrally in `.vitepress/config.ts`.
 
 ```md
-# 3 Beispiel neues Kapitel
+# 3 Example new chapter
 
-Hier beginnt der Inhalt des Kapitels.
+The chapter content starts here.
 ```
 
-## Unterseiten
+## Subpages
 
-- [Unterseite Beispiel](3-beispiel-neues-kapitel/unterseite-beispiel.md)
-- [Unterseite Beispiel 2](3-beispiel-neues-kapitel/unterseite-beispiel-2.md)
+- [Example subpage](3-beispiel-neues-kapitel/unterseite-beispiel.md)
+- [Example subpage 2](3-beispiel-neues-kapitel/unterseite-beispiel-2.md)
 
-## Beispielbild
+## Example image
 
-![Beispielbild aus dem Wiki-Export](/assets/images/example-wiki-attachment.png)
+![Example image from the wiki export](/assets/images/example-wiki-attachment.png)

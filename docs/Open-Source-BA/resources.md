@@ -25,5 +25,3 @@
 *Let us know when you found something good we can add here!*
 
 
----
-- [ ] Was ist mit https://eticplus.de/auth/sign-in?redirect=/dashboard ? #Daniel

@@ -1,9 +1,9 @@
-# 1.4.3 Retrospektiv
+# 1.4.3 Retrospective studies
 
-Template für retrospektive Auswertungen vorhandener Daten.
+Template for retrospective analyses of existing data.
 
-## Inhalte
+## Contents
 
-- Datenquellen und Zeitraum
-- Ein- und Ausschlusskriterien
-- Limitationen
+- Data sources and time period
+- Inclusion and exclusion criteria
+- Limitations

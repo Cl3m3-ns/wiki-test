@@ -1,9 +1,9 @@
-# 1.2 QM-Dokumentation
+# 1.2 QMS documentation
 
-Diese Seite bündelt die Qualitätsmanagement-Dokumentation für Entwicklung und Betrieb.
+This page brings together quality management documentation for development and operation.
 
-## Inhalte
+## Contents
 
-- QM-Handbuch und Geltungsbereich
-- Prozesse und Verantwortlichkeiten
-- Lenkung von Dokumenten und Aufzeichnungen
+- Quality management manual and scope
+- Processes and responsibilities
+- Control of documents and records

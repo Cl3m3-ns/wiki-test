@@ -1,9 +1,9 @@
-# 1.3.3 Klinische Prüfung
+# 1.3.3 Clinical investigations
 
-Regulatorische Anforderungen an die klinische Prüfung und Bewertung.
+Regulatory requirements for clinical investigations and evaluation.
 
-## Inhalte
+## Contents
 
-- Klinische Bewertung
-- Klinische Prüfung
-- Post-Market Clinical Follow-up
+- Clinical evaluation
+- Clinical investigations
+- Post-market clinical follow-up

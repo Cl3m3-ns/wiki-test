@@ -1,47 +1,47 @@
-# 0 Start und Übersicht
+# 0 Start and overview
 
-Diese Wiki sammelt die Markdown-Dokumentation für das AMPEL-Projekt. Sie gliedert sich in zwei Einstiege: die **Bauanleitung** für die Umsetzung und die **Evidenzsammlung** für die wissenschaftliche Dokumentation.
+This wiki brings together the Markdown documentation for the AMPEL project. It covers the **implementation guides** for putting the system into practice and the **evidence collection** for scientific documentation.
 
-## Kapitel
+## Chapters
 
-- [1 Technische Bauanleitung](1-bauanleitung.md)
-- [2 Regulatorische Bauanleitung](/Open-Source-BA/overview.md)
-- [3 Evidenz](2-evidenzsammlung.md)
+- [1 Technical implementation guide](1-bauanleitung.md)
+- [2 Regulatory implementation guide](/Open-Source-BA/overview.md)
+- [3 Evidence](2-evidenzsammlung.md)
 
-## Nutzung
+## Usage
 
-Die Inhalte bleiben normale Markdown-Dateien. Ihre Reihenfolge und Verschachtelung wird zentral in `.vitepress/config.ts` gepflegt. Dadurch benötigen reguläre Wiki-Seiten keine YAML-Kopfzeilen: Eine H1-Überschrift am Anfang der Datei reicht aus.
+Content is stored in standard Markdown files. Page order and nesting are managed centrally in `.vitepress/config.ts`. Regular wiki pages therefore do not need YAML frontmatter: an H1 heading at the beginning of the file is sufficient.
 
-## Verlinkung
+## Links
 
-Interne Seiten werden mit relativen Markdown-Links verknüpft. Die Dateiendung kann stehen bleiben und wird beim Build in die passende VitePress-Route übersetzt:
-
-```md
-[Linktext](pfad/zum/dokument.md)
-```
-
-Zum Beispiel:
+Use relative Markdown links to link to internal pages. The file extension can be retained; it is converted to the corresponding VitePress route during the build:
 
 ```md
-[Unterseite Beispiel](3-beispiel-neues-kapitel/unterseite-beispiel.md)
+[Link text](path/to/document.md)
 ```
 
-Das Ergebnis ist dieser anklickbare Link:
+For example:
 
-[Unterseite Beispiel](3-beispiel-neues-kapitel/unterseite-beispiel.md)
+```md
+[Example subpage](3-beispiel-neues-kapitel/unterseite-beispiel.md)
+```
 
-VitePress prüft beim Erstellen der Website, ob interne Ziele existieren. Dateipfade müssen deshalb die Groß- und Kleinschreibung der tatsächlichen Dateien übernehmen.
+This produces the following clickable link:
 
-## Beispiel: Medien einbetten
+[Example subpage](3-beispiel-neues-kapitel/unterseite-beispiel.md)
 
-Diese Sektion zeigt beispielhaft, wie Bilder, ein YouTube-Video und Code in der AMPEL-Wiki-Dokumentation aussehen können.
+VitePress checks that internal link targets exist when building the website. File paths must therefore match the capitalization of the actual files.
 
-![AMPEL Projektlogo](/assets/images/brand-default-logo.svg)
+## Example: embedding media
+
+This section shows examples of images, a YouTube video, and code in the AMPEL Wiki documentation.
+
+![AMPEL project logo](/assets/images/brand-default-logo.svg)
 
 <div class="ampel-video-wrap">
   <iframe
     src="https://www.youtube-nocookie.com/embed/KquYs9i_5fY"
-    title="AMPEL beim Krankenhaustag in Leipzig | MDR Reportage | 2025"
+    title="AMPEL at Hospital Day in Leipzig | MDR documentary | 2025 (German)"
     loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
@@ -49,29 +49,29 @@ Diese Sektion zeigt beispielhaft, wie Bilder, ein YouTube-Video und Code in der 
   </iframe>
 </div>
 
-Inline-Code sieht so aus: `npm run docs:dev`.
+Inline code looks like this: `npm run docs:dev`.
 
-Ein Bash-Beispiel mit Syntax-Highlighting:
+A Bash example with syntax highlighting:
 
 ```bash
-# Lokale Vorschau starten
+# Start the local preview
 npm ci
 npm run docs:dev
 ```
 
-So sieht der Markdown-Code für ein Bild aus:
+Markdown for an image looks like this:
 
 ```md
-![AMPEL Projektlogo](/assets/images/brand-default-logo.svg)
+![AMPEL project logo](/assets/images/brand-default-logo.svg)
 ```
 
-So sieht der HTML-Code für ein responsives YouTube-Embed aus:
+HTML for a responsive YouTube embed looks like this:
 
 ```html
 <div class="ampel-video-wrap">
   <iframe
     src="https://www.youtube-nocookie.com/embed/KquYs9i_5fY"
-    title="AMPEL beim Krankenhaustag in Leipzig | MDR Reportage | 2025"
+    title="AMPEL at Hospital Day in Leipzig | MDR documentary | 2025 (German)"
     loading="lazy"
     allowfullscreen>
   </iframe>

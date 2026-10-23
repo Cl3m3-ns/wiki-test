@@ -1,9 +1,9 @@
-# 2.1.2 Sonstige Studienergebnisse
+# 2.1.2 Other study results
 
-Weitere Studienergebnisse und Veröffentlichungen.
+Additional study results and publications.
 
-## Inhalte
+## Contents
 
-- Publikationen
-- Kennzahlen
-- Verweise
+- Publications
+- Metrics
+- References

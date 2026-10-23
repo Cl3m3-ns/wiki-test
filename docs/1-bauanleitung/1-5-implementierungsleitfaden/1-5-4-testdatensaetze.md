@@ -1,9 +1,9 @@
-# 1.5.4 Testdatensätze (Doku)
+# 1.5.4 Test dataset documentation
 
-Dokumentation der Testdatensätze für Entwicklung und Validierung.
+Documentation of test datasets for development and validation.
 
-## Inhalte
+## Contents
 
-- Herkunft und Aufbau
-- Anonymisierung
-- Verwendung in Tests
+- Sources and structure
+- Anonymization
+- Use in tests

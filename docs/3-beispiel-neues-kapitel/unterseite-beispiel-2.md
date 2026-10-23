@@ -1,9 +1,9 @@
-# Unterseite Beispiel 2
+# Example subpage 2
 
-Weitere Unterseiten werden als Markdown-Dateien im Kapitelordner angelegt und anschließend in `.vitepress/config.ts` ergänzt.
+Create additional subpages as Markdown files in the chapter folder, then add them to `.vitepress/config.ts`.
 
 ```md
-# Unterseite Beispiel 2
+# Example subpage 2
 
-Hier beginnt der Inhalt der zweiten Unterseite.
+The second subpage's content starts here.
 ```

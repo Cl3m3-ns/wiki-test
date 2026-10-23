@@ -1,19 +1,19 @@
-# 1.4.5 Praktisches Design
+# 1.4.5 Practical study design
 
-Praktische Aspekte des Studiendesigns im klinischen Alltag.
+Practical aspects of study design in routine clinical care.
 
-## Einbindung Eingriffteams
+## Involving intervention teams
 
-Abstimmung mit den eingreifenden Teams und Integration in bestehende Abläufe.
+Coordinating with intervention teams and integrating the study into existing workflows.
 
-- Zuständigkeiten und Ansprechpartner:innen
-- Schulung und Einweisung
-- Dokumentation der Eingriffe
+- Responsibilities and contact persons
+- Training and orientation
+- Documentation of interventions
 
-## Alarmierungswege
+## Alert pathways
 
-Festlegung der Alarmierungs- und Eskalationswege.
+Defining alert and escalation pathways.
 
-- Auslöser und Schwellenwerte
-- Benachrichtigungskanäle
-- Eskalationsstufen
+- Triggers and thresholds
+- Notification channels
+- Escalation levels

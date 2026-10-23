@@ -1,9 +1,9 @@
-# 1.5.5 Installation der Bibliotheken
+# 1.5.5 Library installation
 
-Installation und Versionierung der benötigten Bibliotheken.
+Installation and version management of the required libraries.
 
-## Inhalte
+## Contents
 
-- Abhängigkeiten
-- Installationsschritte
-- Versionsstände
+- Dependencies
+- Installation steps
+- Library versions
