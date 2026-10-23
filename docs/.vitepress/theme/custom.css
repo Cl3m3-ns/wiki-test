@@ -52,8 +52,24 @@
 
 @media (min-width: 960px) {
   .VPNavBar .content-body {
-    transform: translateY(12px);
+    transform: translateY(-26px);
   }
+
+  /* The search is rendered in the sidebar instead of the navbar. */
+  .VPNavBar .VPNavBarSearch {
+    display: none !important;
+  }
+}
+
+.VPSidebar .VPNavBarSearch {
+  display: block;
+  padding: 0 0 18px;
+}
+
+.VPSidebar .DocSearch-Button,
+.VPSidebar .DocSearch-Button:hover {
+  background-color: #ffffff !important;
+  border-color: rgba(31, 41, 51, 0.14);
 }
 
 /* The landing page already presents the AMPEL brand in the hero. Keep its
@@ -113,7 +129,14 @@
 /* Keep article content behind the fixed navigation while scrolling. */
 .VPNavBar {
   z-index: 30;
-  background-color: var(--vp-c-bg) !important;
+  background-color: transparent !important;
+  backdrop-filter: none;
+}
+
+.VPNavBar .content,
+.VPNavBar .content-body,
+.VPNavBar .container > .title {
+  background-color: transparent !important;
 }
 
 .VPNavBar .divider,
