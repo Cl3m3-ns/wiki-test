@@ -15,7 +15,7 @@ features:
     link: /1-bauanleitung
     linkText: Technical section
   - title: "Regulatory manual"
-    details: "Requirements for medical devices, in-house production, clinical investigations, and data protection."
+    details: "In-house medical devices, interventional studies, and open-source publication."
     link: /Open-Source-BA/overview.md
     linkText: Regulatory section
   - title: "Evidence Repository"
