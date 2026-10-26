@@ -324,7 +324,6 @@ html .home-background .ampel-footer__ampel-logo--light {
   font-weight: 400;
   line-height: 0.92;
   letter-spacing: normal;
-  padding-bottom: 20px;
   margin: 0;
   text-align: left;
 }
@@ -349,16 +348,35 @@ html .home-background .ampel-footer__ampel-logo--light {
 }
 
 @media (min-width: 960px) {
+  .home-background .VPHomeHero {
+    --ampel-hero-font-size: clamp(48px, 4.375vw, 56px);
+  }
+
   .home-background .VPHomeHero .main {
-    width: 56%;
-    flex: 0 1 56%;
+    width: auto;
+    flex: 1 1 auto;
+  }
+
+  .home-background .VPHomeHero .text {
+    font-size: var(--ampel-hero-font-size);
+  }
+
+  .home-background .VPHomeHero .image {
+    flex: 1 0 auto;
   }
 
   .home-background .VPHomeHero .image-container {
-    width: 344px;
-    max-width: 100%;
-    /* Position the logo slightly above the third headline line's centre. */
-    transform: translateY(-15px);
+    /* Match all four headline lines; preserve the logo's own aspect ratio. */
+    height: calc(var(--ampel-hero-font-size) * 0.92 * 4);
+    width: auto;
+    /* Align the artwork with the visible letters inside the line boxes. */
+    transform: translateY(calc(var(--ampel-hero-font-size) * 0.09));
+  }
+
+  .home-background .VPHomeHero .image-src {
+    height: 100%;
+    width: auto;
+    max-width: none;
   }
 }
 
