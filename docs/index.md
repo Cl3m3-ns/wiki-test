@@ -4,7 +4,7 @@ pageClass: home-background dark
 title: AMPEL WIKI
 
 hero:
-  text: "Manuals and<br>Evidence for<br>Clinical Decision<br>Support Systems"
+  text: "Implement and<br>Study your own<br>Clinical Decision<br>Support System"
   image:
     src: /assets/images/brand-default-logo-dark.svg
     alt: AMPEL Wiki
