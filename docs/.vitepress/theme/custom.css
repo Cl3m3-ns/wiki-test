@@ -303,16 +303,18 @@ html .home-background .ampel-footer__ampel-logo--light {
   min-height: 0;
 }
 
-.home-background .VPHomeHero .container {
+.home-background .VPHomeHero.has-image .container {
   align-items: center;
   gap: 40px;
+  text-align: left;
 }
 
 .home-background .VPHomeHero .main {
   order: 1;
+  width: 100%;
 }
 
-.home-background .VPHomeHero .text {
+.home-background .VPHomeHero.has-image .main .text {
   color: #fff;
   /* The drawing uses Local Font (4), with no custom font loaded. Excalidraw
      falls back to sans-serif; preserve its compact text metrics as well. */
@@ -321,6 +323,8 @@ html .home-background .ampel-footer__ampel-logo--light {
   line-height: 0.92;
   letter-spacing: normal;
   padding-bottom: 20px;
+  margin: 0;
+  text-align: left;
 }
 
 .home-background .VPHomeHero .image-container {
