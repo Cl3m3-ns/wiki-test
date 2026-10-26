@@ -96,6 +96,9 @@ export default defineConfig({
   description: "A guide for healthcare institutions implementing and operating AMPEL as an in-house solution.",
   base,
   cleanUrls: false,
+  // Use the visible toolbar's height for anchor links at every breakpoint.
+  // Zero padding lets a hidden local toolbar fall back to the main navbar.
+  scrollOffset: { selector: [".VPLocalNav", ".VPNav"], padding: 0 },
   lastUpdated: true,
   sitemap: {
     hostname: canonicalUrl,
