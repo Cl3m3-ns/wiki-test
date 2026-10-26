@@ -292,18 +292,72 @@ html .home-background .ampel-footer__ampel-logo--light {
   display: block !important;
 }
 
-@media (max-width: 959px) {
-  .home-background .VPHomeHero .heading {
-    display: none;
+.home-background .VPHomeHero .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+  margin: 0;
+  min-height: 0;
+}
+
+.home-background .VPHomeHero .container {
+  align-items: center;
+  gap: 40px;
+}
+
+.home-background .VPHomeHero .main {
+  order: 1;
+}
+
+.home-background .VPHomeHero .text {
+  color: #fff;
+  /* The drawing uses Local Font (4), with no custom font loaded. Excalidraw
+     falls back to sans-serif; preserve its compact text metrics as well. */
+  font-family: sans-serif, "Segoe UI Emoji";
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: normal;
+  padding-bottom: 20px;
+}
+
+.home-background .VPHomeHero .image-container {
+  width: 280px;
+  height: auto;
+  transform: none;
+}
+
+.home-background .VPHomeHero .image-bg {
+  display: none;
+}
+
+.home-background .VPHomeHero .image-src {
+  position: static;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  transform: none;
+}
+
+@media (min-width: 960px) {
+  .home-background .VPHomeHero .main {
+    width: 56%;
+    flex: 0 1 56%;
+  }
+
+  .home-background .VPHomeHero .image-container {
+    width: 344px;
+    max-width: 100%;
+    /* Position the logo slightly above the third headline line's centre. */
+    transform: translateY(-15px);
   }
 }
 
-.VPHomeHero .image-src {
-  width: 500px;
-  height: auto;
-  max-width: 90vw;
-  max-height: none;
-  padding-bottom: 55px;
+@media (max-width: 639px) {
+  .home-background .VPHomeHero .image-container {
+    width: 220px;
+  }
 }
 
 .dark .VPNavBarTitle .logo,
