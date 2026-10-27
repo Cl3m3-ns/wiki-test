@@ -403,6 +403,12 @@ html .home-background .ampel-footer__ampel-logo--light {
   }
 }
 
+@media (max-width: 959px) {
+  .home-background .VPHomeHero.has-image .main .text {
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 639px) {
   .home-background .VPHomeHero .image-container {
     width: 220px;
