@@ -421,6 +421,21 @@ html .home-background .ampel-footer__ampel-logo--light {
   background: transparent;
 }
 
+/* Only the cards follow the theme on html; the header stays unchanged. */
+html:not(.dark) .home-background .VPFeature {
+  --vp-c-bg-soft: #f6f6f7;
+  --vp-c-text-1: #1f2933;
+  --vp-c-text-2: #52606d;
+  --vp-c-brand-1: #005ea8;
+  --vp-c-divider: #e2e2e3;
+  color: var(--vp-c-text-1);
+}
+
+html.dark .home-background .VPFeature {
+  --vp-c-bg-soft: #1b1b1f;
+  color: var(--vp-c-text-1);
+}
+
 .VPFeature {
   position: relative;
   overflow: hidden;
