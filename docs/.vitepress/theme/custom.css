@@ -203,7 +203,7 @@
   color-scheme: dark;
   color: var(--vp-c-text-1);
   --vp-nav-bg-color: transparent;
-  --vp-nav-screen-bg-color: transparent;
+  --vp-nav-screen-bg-color: var(--vp-c-bg);
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
@@ -244,6 +244,13 @@ body:has(.home-background) .VPLocalSearchBox {
 .home-background .VPNavBar,
 .home-background .VPNavBar .content-body {
   background-color: transparent !important;
+}
+
+@media (max-width: 767px) {
+  /* Give the open mobile menu and its header one opaque dark surface. */
+  .home-background .VPNavBar.screen-open {
+    background-color: var(--vp-nav-screen-bg-color) !important;
+  }
 }
 
 .home-background .VPNavBar .divider,
