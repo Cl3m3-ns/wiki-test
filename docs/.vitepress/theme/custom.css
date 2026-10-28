@@ -334,13 +334,17 @@ html .home-background .ampel-footer__ampel-logo--light {
   width: 100%;
 }
 
+.home-background .VPHomeHero {
+  /* Match the sans-serif lettering in the supplied drawing preview. */
+  --ampel-hero-font-family: Arial, Helvetica, sans-serif;
+  --ampel-hero-line-height: 1.08;
+}
+
 .home-background .VPHomeHero.has-image .main .text {
   color: #fff;
-  /* The drawing uses Local Font (4), with no custom font loaded. Excalidraw
-     falls back to sans-serif; preserve its compact text metrics as well. */
-  font-family: sans-serif, "Segoe UI Emoji";
+  font-family: var(--ampel-hero-font-family);
   font-weight: 400;
-  line-height: 0.92;
+  line-height: var(--ampel-hero-line-height);
   letter-spacing: normal;
   margin: 0;
   text-align: left;
@@ -390,9 +394,9 @@ html .home-background .ampel-footer__ampel-logo--light {
   .home-background .VPHomeHero .image-container {
     /* From the first line's capital height to the last line's baseline.
        Descenders do not extend the logo below the writing line. */
-    font-family: sans-serif, "Segoe UI Emoji";
+    font-family: var(--ampel-hero-font-family);
     font-size: var(--ampel-hero-font-size);
-    height: calc(3 * 0.92em + 1cap);
+    height: calc(3 * var(--ampel-hero-line-height) * 1em + 1cap);
     width: auto;
   }
 
@@ -421,19 +425,10 @@ html .home-background .ampel-footer__ampel-logo--light {
   background: transparent;
 }
 
-/* Only the cards follow the theme on html; the header stays unchanged. */
-html:not(.dark) .home-background .VPFeature {
-  --vp-c-bg-soft: #f6f6f7;
-  --vp-c-text-1: #1f2933;
-  --vp-c-text-2: #52606d;
-  --vp-c-brand-1: #005ea8;
-  --vp-c-divider: #e2e2e3;
-  color: var(--vp-c-text-1);
-}
-
-html.dark .home-background .VPFeature {
-  --vp-c-bg-soft: #1b1b1f;
-  color: var(--vp-c-text-1);
+/* Keep card headings and descriptions white in either theme. */
+.home-background .VPFeature .title,
+.home-background .VPFeature .details {
+  color: #fff;
 }
 
 .VPFeature {
